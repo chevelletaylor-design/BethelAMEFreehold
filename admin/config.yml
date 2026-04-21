@@ -1,0 +1,451 @@
+# ===========================================================================
+# DECAP CMS CONFIG — what Bethel can edit from the admin panel
+# Edits save to config.json, which powers the live site.
+# ===========================================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    delete: false
+    editor:
+      preview: false
+    files:
+
+      # =====================================================================
+      # ✦ Everything Bethel can edit
+      # =====================================================================
+      - name: "site"
+        label: "✦  Edit Site Content"
+        file: "config.json"
+        fields:
+
+          # --- BRAND ---
+          - label: "🏷️  Brand & Logo"
+            name: "brand"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Church Logo"
+                name: "logo"
+                widget: "image"
+                required: false
+                default: "default"
+                hint: "Upload the Bethel logo (PNG or SVG). Leave blank to use the default design."
+              - { label: "Logo Alt Text (for accessibility)", name: "logoAlt", widget: "string" }
+              - { label: "Brand Name", name: "name", widget: "string", hint: "Shown in nav header — e.g. 'Bethel A.M.E.'" }
+              - { label: "Tagline", name: "tagline", widget: "string", hint: "Small uppercase text under the name — e.g. 'THE CHURCH ON THE HILL'" }
+              - { label: "Footer Blurb", name: "footerTagline", widget: "text", hint: "Short paragraph shown next to the logo in the footer" }
+
+          # --- NAVIGATION ---
+          - label: "🧭  Navigation Menu"
+            name: "nav"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Menu Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Link Target", name: "href", widget: "string", hint: "Use #about, #history, etc." }
+              - { label: "CTA Button Text", name: "ctaLabel", widget: "string" }
+              - { label: "CTA Button Link", name: "ctaHref", widget: "string" }
+
+          # --- HERO ---
+          - label: "⭐  Hero Section (top of page)"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow (small uppercase tag)", name: "eyebrow", widget: "string" }
+              - { label: "Headline Line 1", name: "headlineLine1", widget: "string" }
+              - { label: "Headline Line 2 (italic emphasis)", name: "headlineLine2", widget: "string" }
+              - { label: "Headline Line 3 (optional)", name: "headlineLine3", widget: "string", required: false }
+              - { label: "Subheadline Paragraph", name: "subheadline", widget: "text" }
+              - { label: "Primary Button Text", name: "ctaLabel", widget: "string" }
+              - { label: "Primary Button Link", name: "ctaHref", widget: "string" }
+              - { label: "Secondary Button Text", name: "ctaSecondaryLabel", widget: "string" }
+              - { label: "Secondary Button Link", name: "ctaSecondaryHref", widget: "string" }
+              - label: "Hero Photo (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+                hint: "A main hero photo of the church. Leave blank for a placeholder."
+              - { label: "Hero Photo Alt Text", name: "imageAlt", widget: "string", required: false }
+              - { label: "Gold card label (e.g. EST.)", name: "sinceLabel", widget: "string" }
+              - { label: "Gold card year (e.g. 1848)", name: "sinceYear", widget: "string" }
+              - { label: "Gold card caption", name: "sinceCaption", widget: "string" }
+              - label: "Service Times (shown under hero)"
+                name: "serviceTimes"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Time", name: "time", widget: "string" }
+
+          # --- MARQUEE ---
+          - label: "➡️  Scrolling Marquee Words"
+            name: "marquee"
+            widget: "list"
+            collapsed: true
+            field: { label: "Word or Phrase", name: "item", widget: "string" }
+
+          # --- ABOUT ---
+          - label: "👋  About / Welcome Section"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (circled in gold)", name: "titleLine2", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "p", widget: "text" }
+              - { label: "Button Text", name: "ctaLabel", widget: "string" }
+              - { label: "Button Link", name: "ctaHref", widget: "string" }
+              - label: "About Photo (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+              - { label: "About Photo Alt Text", name: "imageAlt", widget: "string", required: false }
+
+          # --- BUDDY LEWIS PULL QUOTE ---
+          - label: "💬  Buddy Lewis Pull Quote"
+            name: "pullquote"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Quote — Text Before Highlight", name: "quoteBefore", widget: "text" }
+              - { label: "Quote — Highlighted Word", name: "quoteHighlight", widget: "string", hint: "Shown with a gold highlight" }
+              - { label: "Quote — Text After Highlight", name: "quoteAfter", widget: "string" }
+              - { label: "Attribution — Name", name: "author", widget: "string" }
+              - { label: "Attribution — Context", name: "authorContext", widget: "string", hint: "e.g. 'Age 93 · WWII Veteran'" }
+
+          # --- HISTORY TIMELINE ---
+          - label: "📜  History Timeline"
+            name: "history"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro paragraph", name: "lede", widget: "text" }
+              - label: "Timeline Entries"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - { label: "Year or Era", name: "year", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+
+          # --- CULTURAL SIGNIFICANCE ---
+          - label: "✊🏾  Cultural Significance"
+            name: "cultural"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (highlighted)", name: "titleLine2", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "p", widget: "text" }
+              - label: "Photo (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+              - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
+
+          # --- FAITH VERSE ---
+          - label: "📖  Faith Verse (John 3:16 section)"
+            name: "faithVerse"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Verse Text", name: "text", widget: "text" }
+              - { label: "Reference", name: "reference", widget: "string" }
+
+          # --- MISSION / BELIEFS ---
+          - label: "🎯  Mission & Beliefs"
+            name: "mission"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Mission card label", name: "missionLabel", widget: "string" }
+              - { label: "Mission card heading", name: "missionHeading", widget: "string" }
+              - { label: "Mission statement", name: "missionStatement", widget: "text" }
+              - label: "Mission bullets"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Bullet", name: "b", widget: "text" }
+              - { label: "Beliefs card label", name: "beliefLabel", widget: "string" }
+              - { label: "Beliefs card heading", name: "beliefHeading", widget: "string" }
+              - { label: "Beliefs statement", name: "beliefStatement", widget: "text" }
+
+          # --- PASTOR ---
+          - label: "⛪  Pastor Sparks"
+            name: "pastor"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Section Headline", name: "headline", widget: "string" }
+              - { label: "Pastor's Name", name: "name", widget: "string" }
+              - { label: "Pastor's Title", name: "title", widget: "string" }
+              - label: "Pastor Bio Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "p", widget: "text" }
+              - { label: "Pastor's Note — Label", name: "noteLabel", widget: "string" }
+              - { label: "Pastor's Note — Message", name: "note", widget: "text" }
+              - label: "Pastor Photo (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+
+          # --- LEADERSHIP ---
+          - label: "👥  Leadership Team"
+            name: "leadership"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro", name: "lede", widget: "text" }
+              - label: "Leaders"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role (uppercase)", name: "role", widget: "string" }
+                  - { label: "Bio", name: "bio", widget: "text" }
+                  - { label: "Initials (fallback if no photo)", name: "initials", widget: "string", required: false, hint: "e.g. CA, GA — shown when no photo is uploaded" }
+                  - label: "Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+
+          # --- MINISTRIES ---
+          - label: "🤝  Ministries (4 cards)"
+            name: "ministries"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro", name: "lede", widget: "text" }
+              - label: "Ministry Cards"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Small Label (uppercase)", name: "label", widget: "string" }
+                  - { label: "Ministry Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+
+          # --- EDUCATION ---
+          - label: "📚  Christian Education"
+            name: "education"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro", name: "lede", widget: "text" }
+              - label: "Classes / Services"
+                name: "classes"
+                widget: "list"
+                fields:
+                  - { label: "Time", name: "time", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+
+          # --- CONNECTIONAL / GOVERNANCE ---
+          - label: "🏛️  Governance (Steward & Trustee Boards)"
+            name: "connectional"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro", name: "lede", widget: "text" }
+              - label: "Board Cards"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Small Label (uppercase)", name: "label", widget: "string" }
+                  - { label: "Board Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+
+          # --- HERITAGE ---
+          - label: "🌍  A.M.E. Heritage (global denomination)"
+            name: "heritage"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (highlighted)", name: "titleLine2", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "p", widget: "text" }
+              - label: "Photo (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+              - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
+              - label: "Stats (4 numbers)"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Big Number", name: "big", widget: "string" }
+                  - { label: "Small Label (uppercase)", name: "small", widget: "string" }
+
+          # --- GIVING ---
+          - label: "💝  Giving"
+            name: "giving"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Verse Text", name: "verseText", widget: "text" }
+              - { label: "Verse Reference", name: "verseRef", widget: "string" }
+              - label: "Ways to Give"
+                name: "ways"
+                widget: "list"
+                fields:
+                  - { label: "Icon (emoji or symbol)", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+
+          # --- VISIT ---
+          - label: "📍  Plan a Visit"
+            name: "visit"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Sunday Worship Time/Info", name: "sundayWorship", widget: "string" }
+              - { label: "Church School Time/Info", name: "churchSchool", widget: "string" }
+              - { label: "Phone (display)", name: "phone", widget: "string" }
+              - { label: "Phone (link-safe)", name: "phoneHref", widget: "string", hint: "Numbers only, e.g. 17324620826" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Google Maps Embed URL", name: "mapEmbed", widget: "string", hint: "Paste the 'src' URL from a Google Maps embed" }
+
+          # --- FORMS ---
+          - label: "✉️  Contact Form"
+            name: "contactForm"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro paragraph", name: "lede", widget: "text" }
+              - { label: "Submit Button Text", name: "submitLabel", widget: "string" }
+              - { label: "Note below submit", name: "note", widget: "string" }
+
+          - label: "🙏  Prayer Request Form"
+            name: "prayerForm"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro paragraph", name: "lede", widget: "text" }
+              - { label: "Submit Button Text", name: "submitLabel", widget: "string" }
+              - { label: "Note below submit", name: "note", widget: "string" }
+
+          # --- RESOURCES ---
+          - label: "🔗  Featured Resources"
+            name: "resources"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro", name: "lede", widget: "text" }
+              - label: "Resource Links"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "body", widget: "text" }
+                  - { label: "Link URL", name: "href", widget: "string" }
+
+          # --- CLOSING ---
+          - label: "📖  Closing Scripture (James 2:17)"
+            name: "closing"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Scripture Text", name: "text", widget: "text" }
+              - { label: "Reference", name: "reference", widget: "string" }
+
+          # --- FORM PROVIDER ---
+          - label: "⚙️  Form Provider (Advanced)"
+            name: "forms"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Provider"
+                name: "formProvider"
+                widget: "select"
+                options: ["demo", "formspree"]
+                default: "demo"
+                hint: "Choose 'formspree' after adding your Formspree endpoints"
+              - { label: "Contact Form Action URL", name: "contactFormAction", widget: "string", required: false, hint: "Your Formspree endpoint for the contact form" }
+              - { label: "Prayer Form Action URL", name: "prayerFormAction", widget: "string", required: false, hint: "Your Formspree endpoint for the prayer form" }
+
+          # --- FOOTER ---
+          - label: "🔻  Footer"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Explore Links (column 1)"
+                name: "exploreLinks"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Link URL", name: "href", widget: "string" }
+              - label: "Connect Links (column 2)"
+                name: "connectLinks"
+                widget: "list"
+                fields:
+                  - { label: "Link Label", name: "label", widget: "string" }
+                  - { label: "Link URL", name: "href", widget: "string" }
+              - { label: "Visit — Street Address", name: "visitAddress", widget: "string" }
+              - { label: "Visit — City/State/Zip", name: "visitCityState", widget: "string" }
+              - { label: "Visit — Phone", name: "visitPhone", widget: "string" }
+              - { label: "Visit — Phone (link-safe)", name: "visitPhoneHref", widget: "string" }
+              - { label: "Visit — Email", name: "visitEmail", widget: "string" }
+              - { label: "Copyright Text", name: "copyright", widget: "string" }
+              - label: "Designer Credit"
+                name: "designerCredit"
+                widget: "object"
+                fields:
+                  - { label: "Credit Label", name: "label", widget: "string" }
+                  - { label: "Credit URL", name: "href", widget: "string" }
