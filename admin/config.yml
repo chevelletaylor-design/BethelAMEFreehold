@@ -90,6 +90,23 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Time", name: "time", widget: "string" }
+              - label: "Hero Photo Carousel (landscape photos)"
+                name: "carousel"
+                widget: "list"
+                hint: "Add as many landscape photos as you'd like — they auto-rotate in the hero. Leave image blank for a styled placeholder."
+                fields:
+                  - label: "Photo"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - { label: "Alt Text (for accessibility)", name: "alt", widget: "string", required: false }
+                  - { label: "Placeholder Text (shown if no photo)", name: "placeholderText", widget: "string", required: false }
+                  - label: "Placeholder Color (if no photo)"
+                    name: "tone"
+                    widget: "select"
+                    options: ["navy", "gold", "sky"]
+                    default: "navy"
+                    required: false
 
           # --- MARQUEE ---
           - label: "➡️  Scrolling Marquee Words"
