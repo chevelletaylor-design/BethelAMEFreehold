@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "SERVING FREEHOLD SINCE 1848",
     "headlineLine1": "The Church",
-    "headlineLine2": "on the Hill.",
+    "headlineLine2": "on the Hill",
     "headlineLine3": "",
     "subheadline": "Bethel African Methodist Episcopal Church has been a place of worship, welcome, and sanctuary in Freehold, New Jersey for over 175 years. Join us as we move beyond the walls to serve our community.",
     "ctaLabel": "Plan a Visit",
@@ -33,9 +33,29 @@
     "sinceYear": "1848",
     "sinceCaption": "A.M.E. incorporated 1867. Built on the foundations of Squirrel Town.",
     "serviceTimes": [
-      { "label": "Sunday Worship", "time": "11:00 AM" },
-      { "label": "Church School", "time": "9:45 AM" },
-      { "label": "Watch Live", "time": "Instagram" }
+      { "label": "SUNDAY WORSHIP", "time": "11:00 AM" },
+      { "label": "CHURCH SCHOOL", "time": "9:45 AM" },
+      { "label": "WATCH LIVE", "time": "Instagram" }
+    ],
+    "carousel": [
+      {
+        "image": "",
+        "alt": "The Church on the Hill",
+        "placeholderText": "The Church on the Hill",
+        "tone": "navy"
+      },
+      {
+        "image": "",
+        "alt": "A community of faith",
+        "placeholderText": "A community of faith since 1848",
+        "tone": "gold"
+      },
+      {
+        "image": "",
+        "alt": "Beyond the walls",
+        "placeholderText": "Beyond the walls — a sanctuary for all",
+        "tone": "sky"
+      }
     ]
   },
   "marquee": [
