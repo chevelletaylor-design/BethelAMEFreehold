@@ -90,22 +90,33 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Time", name: "time", widget: "string" }
-              - label: "Hero Photo Carousel (landscape photos)"
-                name: "carousel"
-                widget: "list"
-                hint: "Add as many landscape photos as you'd like — they auto-rotate in the hero. Leave image blank for a styled placeholder."
+              - label: "Hero Photo — Left"
+                name: "photoLeft"
+                widget: "object"
+                hint: "The photo that appears on the left side of the hero headline."
                 fields:
-                  - label: "Photo"
-                    name: "image"
-                    widget: "image"
-                    required: false
-                  - { label: "Alt Text (for accessibility)", name: "alt", widget: "string", required: false }
-                  - { label: "Placeholder Text (shown if no photo)", name: "placeholderText", widget: "string", required: false }
-                  - label: "Placeholder Color (if no photo)"
+                  - { label: "Photo", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "alt", widget: "string", required: false }
+                  - { label: "Placeholder Text (if no photo)", name: "placeholderText", widget: "string", required: false }
+                  - label: "Placeholder Color"
                     name: "tone"
                     widget: "select"
                     options: ["navy", "gold", "sky"]
                     default: "navy"
+                    required: false
+              - label: "Hero Photo — Right"
+                name: "photoRight"
+                widget: "object"
+                hint: "The photo that appears on the right side of the hero headline."
+                fields:
+                  - { label: "Photo", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "alt", widget: "string", required: false }
+                  - { label: "Placeholder Text (if no photo)", name: "placeholderText", widget: "string", required: false }
+                  - label: "Placeholder Color"
+                    name: "tone"
+                    widget: "select"
+                    options: ["navy", "gold", "sky"]
+                    default: "gold"
                     required: false
 
           # --- MARQUEE ---
@@ -147,6 +158,12 @@ collections:
               - { label: "Quote — Text After Highlight", name: "quoteAfter", widget: "string" }
               - { label: "Attribution — Name", name: "author", widget: "string" }
               - { label: "Attribution — Context", name: "authorContext", widget: "string", hint: "e.g. 'Age 93 · WWII Veteran'" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades softly into the cream background behind the quote."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
 
           # --- HISTORY TIMELINE ---
           - label: "📜  History Timeline"
@@ -165,6 +182,12 @@ collections:
                   - { label: "Year or Era", name: "year", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
+                  - label: "Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                    hint: "Add a photo for key timeline moments — like Rev. Richard Allen for 1787, or the church exterior for 1988."
+                  - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
 
           # --- CULTURAL SIGNIFICANCE ---
           - label: "✊🏾  Cultural Significance"
@@ -206,6 +229,11 @@ collections:
               - { label: "Mission card label", name: "missionLabel", widget: "string" }
               - { label: "Mission card heading", name: "missionHeading", widget: "string" }
               - { label: "Mission statement", name: "missionStatement", widget: "text" }
+              - label: "Mission card photo (optional)"
+                name: "missionImage"
+                widget: "image"
+                required: false
+              - { label: "Mission photo alt text", name: "missionImageAlt", widget: "string", required: false }
               - label: "Mission bullets"
                 name: "bullets"
                 widget: "list"
@@ -213,6 +241,11 @@ collections:
               - { label: "Beliefs card label", name: "beliefLabel", widget: "string" }
               - { label: "Beliefs card heading", name: "beliefHeading", widget: "string" }
               - { label: "Beliefs statement", name: "beliefStatement", widget: "text" }
+              - label: "Beliefs card photo (optional)"
+                name: "beliefImage"
+                widget: "image"
+                required: false
+              - { label: "Beliefs photo alt text", name: "beliefImageAlt", widget: "string", required: false }
 
           # --- PASTOR ---
           - label: "⛪  Pastor Sparks"
@@ -230,10 +263,25 @@ collections:
                 field: { label: "Paragraph", name: "p", widget: "text" }
               - { label: "Pastor's Note — Label", name: "noteLabel", widget: "string" }
               - { label: "Pastor's Note — Message", name: "note", widget: "text" }
-              - label: "Pastor Photo (optional)"
+              - label: "Pastor Single Photo (legacy — optional)"
                 name: "image"
                 widget: "image"
                 required: false
+                hint: "Leave blank — use the 4-photo collage below instead."
+              - label: "Pastor 4-Photo Collage"
+                name: "photos"
+                widget: "list"
+                hint: "Upload up to 4 photos of Pastor Sparks. They'll arrange in a 2x2 collage with colored blocks behind each."
+                max: 4
+                fields:
+                  - { label: "Photo", name: "image", widget: "image", required: false }
+                  - { label: "Alt Text", name: "alt", widget: "string", required: false }
+                  - label: "Placeholder Color"
+                    name: "tone"
+                    widget: "select"
+                    options: ["navy", "gold", "sky", "green"]
+                    default: "navy"
+                    required: false
 
           # --- LEADERSHIP ---
           - label: "👥  Leadership Team"
@@ -251,12 +299,17 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Role (uppercase)", name: "role", widget: "string" }
-                  - { label: "Bio", name: "bio", widget: "text" }
+                  - { label: "Short Teaser (2-3 sentences, always visible)", name: "teaser", widget: "text", hint: "A hook that makes visitors click 'Read full bio'." }
+                  - label: "Full Bio Paragraphs (shown when expanded)"
+                    name: "fullBio"
+                    widget: "list"
+                    field: { label: "Paragraph", name: "p", widget: "text" }
                   - { label: "Initials (fallback if no photo)", name: "initials", widget: "string", required: false, hint: "e.g. CA, GA — shown when no photo is uploaded" }
                   - label: "Photo (optional)"
                     name: "image"
                     widget: "image"
                     required: false
+                  - { label: "Legacy short bio (optional — not shown on site)", name: "bio", widget: "text", required: false }
 
           # --- MINISTRIES ---
           - label: "🤝  Ministries (4 cards)"
@@ -275,6 +328,11 @@ collections:
                   - { label: "Small Label (uppercase)", name: "label", widget: "string" }
                   - { label: "Ministry Title", name: "title", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
+                  - label: "Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
 
           # --- EDUCATION ---
           - label: "📚  Christian Education"
@@ -293,6 +351,11 @@ collections:
                   - { label: "Time", name: "time", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
+                  - label: "Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
 
           # --- CONNECTIONAL / GOVERNANCE ---
           - label: "🏛️  Governance (Steward & Trustee Boards)"
@@ -311,6 +374,12 @@ collections:
                   - { label: "Small Label (uppercase)", name: "label", widget: "string" }
                   - { label: "Board Name", name: "name", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "select"
+                    options: ["dove", "coins", "building", "hands"]
+                    default: "dove"
+                    hint: "Custom icon shown above the board name. dove = spiritual, coins = finance, building = property, hands = community."
 
           # --- HERITAGE ---
           - label: "🌍  A.M.E. Heritage (global denomination)"
@@ -348,13 +417,67 @@ collections:
               - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
               - { label: "Verse Text", name: "verseText", widget: "text" }
               - { label: "Verse Reference", name: "verseRef", widget: "string" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades very subtly behind the navy giving section."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
               - label: "Ways to Give"
                 name: "ways"
                 widget: "list"
                 fields:
-                  - { label: "Icon (emoji or symbol)", name: "icon", widget: "string" }
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "select"
+                    options: ["online", "person", "envelope"]
+                    default: "online"
+                    hint: "Custom icon. online = computer/card, person = check-in, envelope = mail."
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
+
+          # --- EVENTS ---
+          - label: "📅  Events"
+            name: "events"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title — Line 1", name: "titleLine1", widget: "string" }
+              - { label: "Title — Line 2 (italic)", name: "titleLine2", widget: "string" }
+              - { label: "Intro paragraph", name: "lede", widget: "text" }
+              - label: "Featured / Upcoming Event"
+                name: "featured"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Eyebrow (e.g. OUR NEXT EVENT)", name: "eyebrow", widget: "string" }
+                  - { label: "Event Title", name: "title", widget: "string" }
+                  - { label: "Event Date", name: "date", widget: "string", hint: "e.g. 'December 14, 2026' or 'December 2026'" }
+                  - { label: "Event Location", name: "location", widget: "string" }
+                  - { label: "Event Description", name: "description", widget: "text" }
+                  - { label: "CTA Button Label", name: "ctaLabel", widget: "string", required: false, hint: "e.g. 'RSVP / Learn More'. Leave blank to hide the button." }
+                  - { label: "CTA Button Link", name: "ctaHref", widget: "string", required: false }
+                  - label: "Event Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
+              - { label: "Past Events Heading", name: "pastHeading", widget: "string" }
+              - { label: "Past Events Intro", name: "pastLede", widget: "text", required: false }
+              - label: "Past Events"
+                name: "past"
+                widget: "list"
+                hint: "Add past events — galas, celebrations, community moments. Each can include a photo."
+                fields:
+                  - { label: "Event Title", name: "title", widget: "string" }
+                  - { label: "Date", name: "date", widget: "string", hint: "e.g. 'December 2024'" }
+                  - { label: "Short Description", name: "description", widget: "text" }
+                  - label: "Photo (optional)"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - { label: "Photo Alt Text", name: "imageAlt", widget: "string", required: false }
 
           # --- VISIT ---
           - label: "📍  Plan a Visit"
@@ -420,6 +543,12 @@ collections:
             fields:
               - { label: "Scripture Text", name: "text", widget: "text" }
               - { label: "Reference", name: "reference", widget: "string" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades softly behind the cream background."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
 
           # --- FORM PROVIDER ---
           - label: "⚙️  Form Provider (Advanced)"
