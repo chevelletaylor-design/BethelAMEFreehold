@@ -136,13 +136,24 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
   }
-  .nav-logo-center img, .nav-logo-center svg {
-    width: 70px; height: 70px;
+  .nav-logo-center > div,
+  .nav-logo-center img,
+  .nav-logo-center svg {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 70px;
+    max-height: 70px;
     object-fit: contain;
+    display: block;
     transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
-  .nav-logo-center:hover img, .nav-logo-center:hover svg {
+  .nav-logo-center:hover > div,
+  .nav-logo-center:hover img,
+  .nav-logo-center:hover svg {
     transform: scale(1.06);
   }
 
@@ -1724,25 +1735,34 @@
     }
     .nav-links-left.open, .nav-links-right.open { display: flex; }
     .mobile-toggle { display: block; grid-column: 1; }
-    .nav-logo-center { grid-column: 2; justify-self: center; }
-    .nav-logo-center img, .nav-logo-center svg { width: 52px; height: 52px; }
+    .nav-logo-center { grid-column: 2; justify-self: center; width: 50px; height: 50px; }
+    .nav-logo-center > div, .nav-logo-center img, .nav-logo-center svg { max-width: 50px; max-height: 50px; }
     .nav-cta { grid-column: 3; padding: 9px 16px; font-size: 11px !important; letter-spacing: 0.08em !important; }
     /* Hide the nav-cta that lives INSIDE the right link group on mobile (use the top-level one if duplicated) */
     .nav-links-right .nav-cta { display: none; }
 
     section, .hero, .about, .pullquote, .history, .cultural, .mission, .verse, .pastor, .leadership, .ministries, .christian-ed, .connectional, .heritage, .events, .giving, .visit, .contact-forms, .resources, .closing { padding: 90px 22px; }
 
-    /* Hero — stack flanking photos */
-    .hero { padding: 130px 22px 60px; }
-    .hero h1 { font-size: clamp(2.4rem, 11vw, 4.4rem); letter-spacing: -0.028em; }
-    .hero-layout { grid-template-columns: 1fr; gap: 40px; }
-    .hero-photo-card { max-width: 280px; margin: 0 auto; }
-    .hero-photo-card.left { justify-self: center; }
-    .hero-photo-card.right { justify-self: center; }
-    .hero-inner { order: -1; }
-    .hero-service-times { gap: 24px 36px; padding: 26px 0; }
-    .hero-service-times .st-item { min-width: 100px; }
-    .hero-service-times .st-time { font-size: 20px; }
+    /* Hero — stack content first, then flanking photos hide on mobile */
+    .hero { padding: 120px 22px 60px; }
+    .hero h1 { font-size: clamp(2.2rem, 10vw, 3.8rem); letter-spacing: -0.025em; line-height: 0.98; }
+    .hero-layout { grid-template-columns: 1fr; gap: 36px; display: flex; flex-direction: column; }
+    .hero-inner { order: 1; text-align: center; }
+    .hero-photo-card.left { order: 2; max-width: 240px; margin: 0 auto; justify-self: center; }
+    .hero-photo-card.right { order: 3; max-width: 240px; margin: 0 auto; justify-self: center; }
+    /* Hide the flanking photo CARDS entirely on mobile if they only contain a placeholder (no uploaded photo) */
+    .hero-photo-card:has(.photo-placeholder) { display: none; }
+    .hero-service-times {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+      padding: 26px 0;
+      max-width: 360px;
+      margin: 28px auto 0;
+    }
+    .hero-service-times .st-item { min-width: 0; text-align: center; }
+    .hero-service-times .st-time { font-size: 18px; }
+    .hero-service-times .st-label { font-size: 10px; letter-spacing: 0.16em; }
 
     /* Mission cards */
     .mission-card-body { padding: 34px 26px; }
