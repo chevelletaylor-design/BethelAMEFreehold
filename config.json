@@ -8,7 +8,7 @@
       "We were founded to predominantly serve and minister to the needs of the African American community and persons of color. Although our doors are open to all, we are proud to be members of the Black Church.",
       "Bethel is proud of its legacy and its importance — a place where generations have gathered, endured, and built something that has outlasted slavery, two world wars, and segregation under Jim Crow."
     ],
-    "image": "",
+    "image": "/assets/images/img_0521.jpg",
     "imageAlt": "Bethel AME congregation — the Black Church tradition"
   },
   "marquee": [
@@ -102,7 +102,7 @@
           "Favorite Scripture: \"I will bless the Lord at all times, His praise shall continually be in my mouth.\""
         ],
         "initials": "CA",
-        "image": ""
+        "image": "/assets/images/img_0517.jpg"
       },
       {
         "name": "Evangelist Gloria Acker",
@@ -236,7 +236,7 @@
     "eyebrow": "WHAT WE DO",
     "beliefStatement": "We believe in a God who is infinite and eternal, omniscient (all-knowing), omnipotent (all-powerful), and omnipresent (everywhere at the same time) — who has been manifested and revealed in our Lord and Savior Jesus Christ. \"So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.\" — James 2:17 (NLT)",
     "beliefImageAlt": "Worship at Bethel",
-    "missionImage": "",
+    "missionImage": "/assets/images/img_4335.jpg",
     "bullets": [
       "Serve the community by meeting spiritual, social, emotional, and physical needs",
       "Encourage spiritual formation through worship, study of God's Word, and living out the teaching of Jesus Christ",
@@ -245,7 +245,7 @@
     ],
     "beliefLabel": "WHAT WE BELIEVE",
     "missionHeading": "To move beyond the walls of the church.",
-    "beliefImage": "",
+    "beliefImage": "/assets/images/img_4406.jpg",
     "missionImageAlt": "Bethel serving the community"
   },
   "about": {
@@ -307,28 +307,28 @@
         "year": "1690s",
         "title": "Squirrel Town",
         "body": "Free Black residents form a village behind what is today the St. Rose of Lima cemetery on Route 522 in Freehold Township. This is the community Bethel would eventually grow from.",
-        "image": "",
+        "image": "/assets/images/2a3697feb19668f3d3ffb8ad5bbec8e5.jpg.webp",
         "imageAlt": ""
       },
       {
         "year": "1787",
         "title": "The A.M.E. Denomination is Born",
         "body": "Rev. Richard Allen — the first leader and a former slave — founds the African Methodist Episcopal Church. Bethel is part of a denomination born out of the fight for dignity and equal worship.",
-        "image": "",
+        "image": "/assets/images/481895514_671849582076737_2399930819821223814_n.jpg",
         "imageAlt": "Rev. Richard Allen, founder of the A.M.E. Church"
       },
       {
         "year": "1848",
         "title": "Bethel Begins",
         "body": "Bethel is founded in the Squirrel Town village, serving Black worshipers who had been excluded from predominantly white churches. From the very beginning, Bethel is a sanctuary.",
-        "image": "",
+        "image": "/assets/images/img_0262.jpg",
         "imageAlt": ""
       },
       {
         "year": "1867",
         "title": "Officially Incorporated",
         "body": "Bethel is officially established and incorporated as a member of the A.M.E. Church denomination. The original building is constructed.",
-        "image": "",
+        "image": "/assets/images/img_0471.jpg",
         "imageAlt": ""
       },
       {
@@ -349,7 +349,7 @@
         "year": "Today",
         "title": "Beyond the Walls",
         "body": "Bethel continues to evolve — restoring the historic Squirrel Town Cemetery where Black Civil War veterans are buried, welcoming new members of every background, and living out its mission to move beyond the walls of the church to serve the community.",
-        "image": "",
+        "image": "/assets/images/img_0517.jpg",
         "imageAlt": "The Bethel congregation today"
       }
     ]
@@ -363,22 +363,22 @@
   "pastor": {
     "photos": [
       {
-        "image": "",
+        "image": "/assets/images/img_0633.jpg",
         "alt": "Pastor Sparks portrait",
         "tone": "navy"
       },
       {
-        "image": "",
+        "image": "/assets/images/img_0517.jpg",
         "alt": "Pastor Sparks preaching",
         "tone": "gold"
       },
       {
-        "image": "",
+        "image": "/assets/images/img_4467.jpg",
         "alt": "Pastor Sparks with the community",
         "tone": "sky"
       },
       {
-        "image": "",
+        "image": "/assets/images/img_4335.jpg",
         "alt": "Pastor Sparks with family",
         "tone": "green"
       }
@@ -395,7 +395,7 @@
     "note": "Sister Sparks and I greet you in the name of our Lord and Savior Jesus Christ. Thank you for visiting our church through the various digital mediums. We are excited to have you as part of our ministry. Please visit often — and keep up with the programs, events, and activities we have planned. God bless you.",
     "headline": "A Shepherd for This Flock.",
     "title": "Senior Pastor",
-    "image": ""
+    "image": "/assets/images/img_4467.jpg"
   },
   "pullquote": {
     "quoteBefore": "I've been alive a long time, and I've endured a lot. That's one of the reasons the church really appealed to us. It's the one place where we could find",
@@ -568,14 +568,14 @@
         "label": "FOR YOUTH",
         "title": "Young People's Division",
         "body": "Under the leadership of the Women's Missionary Society, the YPD provides meaningful youth training and leadership experience in all areas of church life — evangelism, Christian social relations, and education programs.",
-        "image": "",
+        "image": "/assets/images/481895514_671849582076737_2399930819821223814_n.jpg",
         "imageAlt": "Young People's Division"
       },
       {
         "label": "FOR MEN",
         "title": "Sons of Allen",
         "body": "Our mission is to reach far and wide to bring men to Christ, to organize and train men for the work of the ministry, to teach the history of our church, and to share our faith in the context of our daily lives.",
-        "image": "",
+        "image": "/assets/images/img_4467.jpg",
         "imageAlt": "Sons of Allen"
       }
     ]
