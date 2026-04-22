@@ -1,15 +1,56 @@
 {
-  "cultural": {
-    "eyebrow": "WHAT MAKES US DIFFERENT",
-    "titleLine1": "Rooted in the",
-    "titleLine2": "Black Church",
-    "paragraphs": [
-      "Churches have always been crucial to the African American experience — and Bethel fulfills that role. Through the years, Bethel has been a place where people come to pray, to meet, to reflect, to laugh, to cry, to mourn, and to celebrate.",
-      "We were founded to predominantly serve and minister to the needs of the African American community and persons of color. Although our doors are open to all, we are proud to be members of the Black Church.",
-      "Bethel is proud of its legacy and its importance — a place where generations have gathered, endured, and built something that has outlasted slavery, two world wars, and segregation under Jim Crow."
+  "brand": {
+    "logo": "default",
+    "logoAlt": "Bethel African Methodist Episcopal Church — The Church on the Hill",
+    "name": "Bethel A.M.E.",
+    "tagline": "THE CHURCH ON THE HILL",
+    "footerTagline": "Bethel African Methodist Episcopal Church has served the people of Freehold since 1848. A place of worship, a place of welcome, a place of sanctuary — open to all."
+  },
+  "nav": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "History", "href": "#history" },
+      { "label": "Pastor", "href": "#pastor" },
+      { "label": "Ministries", "href": "#ministries" },
+      { "label": "Events", "href": "#events" },
+      { "label": "Giving", "href": "#giving" }
     ],
-    "image": "/assets/images/img_4485.jpg",
-    "imageAlt": "Bethel AME congregation — the Black Church tradition"
+    "ctaLabel": "Plan a Visit",
+    "ctaHref": "#visit"
+  },
+  "hero": {
+    "eyebrow": "SERVING FREEHOLD SINCE 1848",
+    "headlineLine1": "The Church",
+    "headlineLine2": "on the Hill",
+    "headlineLine3": "",
+    "subheadline": "Bethel African Methodist Episcopal Church has been a place of worship, welcome, and sanctuary in Freehold, New Jersey for over 175 years. Join us as we move beyond the walls to serve our community.",
+    "ctaLabel": "Plan a Visit",
+    "ctaHref": "#visit",
+    "ctaSecondaryLabel": "Our Story",
+    "ctaSecondaryHref": "#history",
+    "image": "",
+    "imageAlt": "Bethel AME Church — the Church on the Hill in Freehold, NJ",
+    "sinceLabel": "EST.",
+    "sinceYear": "1848",
+    "sinceCaption": "A.M.E. incorporated 1867. Built on the foundations of Squirrel Town.",
+    "serviceTimes": [
+      { "label": "SUNDAY WORSHIP", "time": "11:00 AM" },
+      { "label": "CHURCH SCHOOL", "time": "9:45 AM" },
+      { "label": "WATCH LIVE", "time": "Instagram" }
+    ],
+    "carousel": [],
+    "photoLeft": {
+      "image": "",
+      "alt": "Bethel Church on the Hill",
+      "placeholderText": "The Church on the Hill",
+      "tone": "navy"
+    },
+    "photoRight": {
+      "image": "",
+      "alt": "Bethel congregation",
+      "placeholderText": "A community of faith",
+      "tone": "gold"
+    }
   },
   "marquee": [
     "Worship",
@@ -19,37 +60,365 @@
     "Legacy",
     "Beyond the Walls"
   ],
-  "nav": {
-    "links": [
-      {
-        "label": "About",
-        "href": "#about"
-      },
-      {
-        "label": "History",
-        "href": "#history"
-      },
-      {
-        "label": "Pastor",
-        "href": "#pastor"
-      },
-      {
-        "label": "Ministries",
-        "href": "#ministries"
-      },
-      {
-        "label": "Giving",
-        "href": "#giving"
-      }
+  "about": {
+    "eyebrow": "WELCOME HOME",
+    "titleLine1": "Welcome to",
+    "titleLine2": "Bethel.",
+    "paragraphs": [
+      "We are glad you are visiting with us today. This site is filled with information about our denomination, our local church, and the ministries that we offer. Take a moment to learn more about us — and consider becoming part of our family.",
+      "Our church is located at 3 Waterworks Road in Freehold, NJ. Many in Freehold Borough know us simply as \"the church on the hill.\" But our roots stretch back further than the building — to the 1690s, when free Black residents formed a village called Squirrel Town.",
+      "God bless you."
     ],
-    "ctaLabel": "Plan a Visit",
-    "ctaHref": "#visit"
+    "ctaLabel": "Meet Our Pastor",
+    "ctaHref": "#pastor",
+    "image": "",
+    "imageAlt": "Inside Bethel AME — a place of welcome"
+  },
+  "pullquote": {
+    "quoteBefore": "I've been alive a long time, and I've endured a lot. That's one of the reasons the church really appealed to us. It's the one place where we could find",
+    "quoteHighlight": "sanctuary",
+    "quoteAfter": ". We could be equal.",
+    "author": "BIGERTON \"BUDDY\" LEWIS",
+    "authorContext": "Age 93 · World War II Veteran · Bethel Member",
+    "backgroundImage": "",
+    "backgroundImageAlt": "Congregation gathering"
+  },
+  "history": {
+    "eyebrow": "OUR STORY",
+    "titleLine1": "Outlived slavery.",
+    "titleLine2": "Outlived every storm.",
+    "lede": "From a village of free Black residents in the 1690s to a global A.M.E. denomination today, Bethel's story is a story of endurance, faith, and community.",
+    "timeline": [
+      {
+        "year": "1690s",
+        "title": "Squirrel Town",
+        "body": "Free Black residents form a village behind what is today the St. Rose of Lima cemetery on Route 522 in Freehold Township. This is the community Bethel would eventually grow from.",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "year": "1787",
+        "title": "The A.M.E. Denomination is Born",
+        "body": "Rev. Richard Allen — the first leader and a former slave — founds the African Methodist Episcopal Church. Bethel is part of a denomination born out of the fight for dignity and equal worship.",
+        "image": "",
+        "imageAlt": "Rev. Richard Allen, founder of the A.M.E. Church"
+      },
+      {
+        "year": "1848",
+        "title": "Bethel Begins",
+        "body": "Bethel is founded in the Squirrel Town village, serving Black worshipers who had been excluded from predominantly white churches. From the very beginning, Bethel is a sanctuary.",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "year": "1867",
+        "title": "Officially Incorporated",
+        "body": "Bethel is officially established and incorporated as a member of the A.M.E. Church denomination. The original building is constructed.",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "year": "The Peach Orchard Years",
+        "title": "A Move to Freehold Borough",
+        "body": "After the Squirrel Town years, the congregation moves to a small building in a Freehold Borough area known as the Peach Orchard — today called Avenue A.",
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "year": "1988",
+        "title": "The Church on the Hill",
+        "body": "A new structure is completed and Bethel relocates to its present location at 3 Waterworks Road — becoming the beloved \"church on the hill\" that generations of Freehold residents know today.",
+        "image": "",
+        "imageAlt": "Bethel AME Church on Waterworks Road"
+      },
+      {
+        "year": "Today",
+        "title": "Beyond the Walls",
+        "body": "Bethel continues to evolve — restoring the historic Squirrel Town Cemetery where Black Civil War veterans are buried, welcoming new members of every background, and living out its mission to move beyond the walls of the church to serve the community.",
+        "image": "",
+        "imageAlt": "The Bethel congregation today"
+      }
+    ]
+  },
+  "cultural": {
+    "eyebrow": "WHAT MAKES US DIFFERENT",
+    "titleLine1": "Rooted in the",
+    "titleLine2": "Black Church",
+    "paragraphs": [
+      "Churches have always been crucial to the African American experience — and Bethel fulfills that role. Through the years, Bethel has been a place where people come to pray, to meet, to reflect, to laugh, to cry, to mourn, and to celebrate.",
+      "We were founded to predominantly serve and minister to the needs of the African American community and persons of color. Although our doors are open to all, we are proud to be members of the Black Church.",
+      "Bethel is proud of its legacy and its importance — a place where generations have gathered, endured, and built something that has outlasted slavery, two world wars, and segregation under Jim Crow."
+    ],
+    "image": "",
+    "imageAlt": "Bethel AME congregation — the Black Church tradition"
+  },
+  "faithVerse": {
+    "text": "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life.",
+    "reference": "— John 3:16"
+  },
+  "mission": {
+    "eyebrow": "WHAT WE DO",
+    "titleLine1": "Our mission",
+    "titleLine2": "is bigger than a building.",
+    "missionLabel": "OUR MISSION",
+    "missionHeading": "To move beyond the walls of the church.",
+    "missionStatement": "We exist to serve our community by meeting the spiritual, social, emotional, and physical needs of all who come through — and all who don't yet know us.",
+    "missionImage": "",
+    "missionImageAlt": "Bethel serving the community",
+    "bullets": [
+      "Serve the community by meeting spiritual, social, emotional, and physical needs",
+      "Encourage spiritual formation through worship, study of God's Word, and living out the teaching of Jesus Christ",
+      "Support the growth and development of youth and young adults to live out the plan and purpose of their lives",
+      "Exercise our stewardship through the giving of our tithes, offerings, gifts, and graces"
+    ],
+    "beliefLabel": "WHAT WE BELIEVE",
+    "beliefHeading": "One God. Infinite. Eternal.",
+    "beliefStatement": "We believe in a God who is infinite and eternal, omniscient (all-knowing), omnipotent (all-powerful), and omnipresent (everywhere at the same time) — who has been manifested and revealed in our Lord and Savior Jesus Christ. \"So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.\" — James 2:17 (NLT)",
+    "beliefImage": "",
+    "beliefImageAlt": "Worship at Bethel"
+  },
+  "pastor": {
+    "eyebrow": "MEET OUR PASTOR",
+    "headline": "A Shepherd for This Flock.",
+    "name": "Reverend Ronald L. Sparks",
+    "title": "Senior Pastor",
+    "paragraphs": [
+      "Rev. Ronald L. Sparks is a native of Toledo, Ohio. Immediately after graduating from high school, he enlisted in the United States Air Force and was honorably discharged after six years of service. He is married to his life partner and best friend, Candace M. Sparks. They have been blessed with three wonderful children — Cameron, Symone, and Braedon — and in 2020 welcomed their granddaughter, Shaelyn Alexandra Sparks.",
+      "Rev. Sparks holds a Bachelor of Science in Business Management from the University of Maryland University College and a Master of Divinity from Drew University Theological School. He accepted his call to ministry in 1997, mentored by his father in the ministry, the late Rev. Dr. Kenneth L. Saunders. He was ordained an Itinerant Deacon in 1998 and an Itinerant Elder in 2001. Rev. Sparks began his pastoral ministry in 2005 at St. Paul AME Church in South Bound Brook, NJ, and today serves as Pastor of Bethel AME Church in Freehold.",
+      "Pastor Sparks' ministry extends beyond the walls of the church. He currently serves as incoming Convener of the Greater Freehold Clergy Association, Vice President of the Board of Directors for the Senior Citizens Activity Network (SCAN), and was instrumental in the reestablishment of the Freehold Chapter of the NAACP. He is a member of the Freehold Borough Human Relations Advisory Committee, the Freehold Safety Net Food Program, and the Monmouth County ACTS Behavioral Hub. He has hosted town hall meetings with the Monmouth County Prosecutor's Office and local law enforcement, and served as a community liaison for CentraState Hospital's COVID-19 vaccination efforts.",
+      "In addition to pastoring, Rev. Sparks has been employed for 28 years at Agilent Technologies, Inc., where he serves as a Supplier Relationship Manager. He believes it is important for each of us to understand our history — because when we understand our history, we recognize that we are not standing alone, but on the shoulders of those who stood before us."
+    ],
+    "noteLabel": "A NOTE FROM PASTOR SPARKS",
+    "note": "Sister Sparks and I greet you in the name of our Lord and Savior Jesus Christ. Thank you for visiting our church through the various digital mediums. We are excited to have you as part of our ministry. Please visit often — and keep up with the programs, events, and activities we have planned. God bless you.",
+    "image": "",
+    "photos": [
+      { "image": "", "alt": "Pastor Sparks portrait", "tone": "navy" },
+      { "image": "", "alt": "Pastor Sparks preaching", "tone": "gold" },
+      { "image": "", "alt": "Pastor Sparks with the community", "tone": "sky" },
+      { "image": "", "alt": "Pastor Sparks with family", "tone": "green" }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "MINISTRY LEADERSHIP",
+    "titleLine1": "Servant leaders",
+    "titleLine2": "of the Kingdom.",
+    "lede": "Our ministry team is represented by some of the best servant leaders in the Kingdom of God — faithful, educated, and committed to Bethel's mission.",
+    "items": [
+      {
+        "name": "Rev. Dr. Cheryl Auguste",
+        "role": "ITINERANT ELDER",
+        "teaser": "A native New Yorker and retired NYC public school principal, Rev. Cheryl has served 35+ years in education and ministry.",
+        "fullBio": [
+          "Rev. Dr. Cheryl Auguste is a native New Yorker — born, raised, and educated in Brooklyn. In March 2010 she relocated to Monroe Township, New Jersey.",
+          "She worked in the field of education for over 35 years, most of that time within the New York City Public School system, including six years as the principal of the Bridge Street Preparatory School. In 2008, Rev. Cheryl retired from her position as principal of PS 181 in Springfield Gardens, Queens. Her work at PS 181 allowed her not only to utilize her gifts as an educator, but also as a ministry to the students, parents, and staff of the school community.",
+          "Rev. Auguste accepted her call to preach at Bridge Street AWME Church in 1995 and was ordained an Itinerant Deacon at the First District Annual Conference in May 2000, and an Itinerant Elder in April 2012. She holds a Master of Divinity and a Doctor of Ministry in Pastoral Care and Counseling from New Brunswick Theological Seminary. Her doctoral work focused on African American women in the church who have experienced depression.",
+          "Since February 2016, Rev. Cheryl has served as an associate minister on the ministerial staff at Bethel AME Church. Her ministry role at Bethel includes teaching bible study, preaching, and working with the Women's Fellowship, Class Leaders, and Prayer Warriors. She has also been an instructor in the AME Ministerial Institute for both the New York and New Jersey Annual Conferences, developing courses for Christian Education, Women of the Bible, and AME Doctrines.",
+          "With a continual desire to be of service, Rev. Cheryl completed her training as a Disaster Chaplain in NYC. Her testimony is that she is a walking miracle, always willing to share her story of God's healing, grace, and mercy. Most of all, she loves the Lord, is proud to be a child of God, and to be used in God's service.",
+          "Favorite Scripture: \"I will bless the Lord at all times, His praise shall continually be in my mouth.\""
+        ],
+        "initials": "CA",
+        "image": ""
+      },
+      {
+        "name": "Evangelist Gloria Acker",
+        "role": "EVANGELIST",
+        "teaser": "A native New Jerseyan with a lifetime of faithful service, Evangelist Acker joined Bethel in 2019 after decades at Trinity AME.",
+        "fullBio": [
+          "A native New Jerseyan, Evangelist Gloria Acker faithfully served at Trinity AME Church in Long Branch, New Jersey from 1955 to 2018 before transferring her membership to Bethel AME Church – Freehold, New Jersey in January 2019.",
+          "She is a licensed and certified Evangelist. She attended the New Jersey Ministerial Training Institute's two-year evangelist program under the leadership of the late Rev. Dr. Albert Turk.",
+          "Evangelist Gloria's unwavering commitment to the work of the Lord is evident in her service and work in the church and community. She serves on the ministerial staff at Bethel and is a member of the Prayer Warriors, Women's Fellowship, and food pantry ministries. She volunteers at Applewood Nursing Home and the CentraState Hospital Chaplain Program. She is passionate about uplifting the spirit of others and enjoys participating with Monmouth Worship Center's Praise Team. She also regularly visits seniors and golden agers at nursing homes and senior facilities throughout the area.",
+          "Evangelist Acker is a loving and devoted wife, mother, grandmother, and proud great-grandmother of twelve."
+        ],
+        "initials": "GA",
+        "image": ""
+      },
+      {
+        "name": "Bernadine Wilson-Gibson",
+        "role": "MINISTER OF MUSIC",
+        "teaser": "Leading Bethel's music ministry with heart and dedication — lifting voices and spirits in praise week after week.",
+        "fullBio": [
+          "Bernadine Wilson-Gibson serves as Bethel's Minister of Music, leading our music ministry with heart, skill, and unwavering dedication.",
+          "Through music, our worship comes alive — lifting voices and spirits in praise every Sunday. A full biography will be posted here soon. In the meantime, you can experience her ministry firsthand at 11:00 AM Sunday worship."
+        ],
+        "initials": "BW",
+        "image": ""
+      },
+      {
+        "name": "Sister Corliss Smith",
+        "role": "CHURCH ADMINISTRATOR",
+        "teaser": "A faithful servant coordinating the daily life of Bethel — the first point of contact for pastoral and clergy needs.",
+        "fullBio": [
+          "Sister Corliss Smith is an awesome servant of the Lord and a true blessing to the Bethel A.M.E. Church ministry. She serves as our Church Administrator, coordinating schedules, meetings, and day-to-day operations for the church office.",
+          "Please contact her through the Church Office for any pastoral or clergy needs — she will coordinate schedules and meetings accordingly. A full biography will be posted here soon."
+        ],
+        "initials": "CS",
+        "image": ""
+      }
+    ]
+  },
+  "ministries": {
+    "eyebrow": "CONNECTIONAL MINISTRIES",
+    "titleLine1": "Four ways",
+    "titleLine2": "to get involved.",
+    "lede": "As a global institution, the A.M.E. Church operates across continents — and Bethel mirrors that connectedness right here in Freehold. Here are a few of our key connectional ministries.",
+    "items": [
+      {
+        "label": "FOR EVERYONE",
+        "title": "Lay Organization",
+        "body": "The organized lay movement of the A.M.E. Church operates as a vital force for good — free, independent, and motivated only by the general welfare of African Methodism. We keep the memory of Richard Allen alive and educate the laity in the full program of the Church.",
+        "image": "",
+        "imageAlt": "Lay Organization at Bethel"
+      },
+      {
+        "label": "FOR WOMEN",
+        "title": "Women's Missionary Society",
+        "body": "As women called to discipleship — growing in knowledge of God through Jesus Christ, committed to support the mission of the Church, and empowered by the Holy Spirit — we are challenged to help one another engage in ministry and action.",
+        "image": "",
+        "imageAlt": "Women's Missionary Society"
+      },
+      {
+        "label": "FOR YOUTH",
+        "title": "Young People's Division",
+        "body": "Under the leadership of the Women's Missionary Society, the YPD provides meaningful youth training and leadership experience in all areas of church life — evangelism, Christian social relations, and education programs.",
+        "image": "",
+        "imageAlt": "Young People's Division"
+      },
+      {
+        "label": "FOR MEN",
+        "title": "Sons of Allen",
+        "body": "Our mission is to reach far and wide to bring men to Christ, to organize and train men for the work of the ministry, to teach the history of our church, and to share our faith in the context of our daily lives.",
+        "image": "",
+        "imageAlt": "Sons of Allen"
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "CHRISTIAN EDUCATION",
+    "titleLine1": "Learn. Live.",
+    "titleLine2": "Serve.",
+    "lede": "Our Department of Christian Education develops comprehensive programs that lead to knowledge of the Holy Scriptures and the Christian Religion — and the implementation of those values in daily life.",
+    "classes": [
+      {
+        "time": "Sundays · 9:45 AM",
+        "title": "Youth Church School",
+        "body": "Classes for every age level, 5 years through 12th grade. Led by dedicated volunteers using reformed curriculum resources. Biblically based activities that help our children and youth creatively wonder about God's story and explore ways to share God's love.",
+        "image": "",
+        "imageAlt": "Youth Church School"
+      },
+      {
+        "time": "Sundays · 9:45 AM",
+        "title": "Adult Church School",
+        "body": "A variety of topics and teaching styles designed to meet the needs of adults who continue to study and seek to grow a faith relevant to their daily living. Come study God's Word in community.",
+        "image": "",
+        "imageAlt": "Adult Church School"
+      },
+      {
+        "time": "Sundays · 11:00 AM",
+        "title": "Morning Worship",
+        "body": "In-person at 3 Waterworks Road and streamed live on Instagram. A time to gather, to praise, to pray, and to be fed for the week ahead. All are welcome.",
+        "image": "",
+        "imageAlt": "Morning Worship"
+      }
+    ]
+  },
+  "connectional": {
+    "eyebrow": "STRUCTURED GOVERNANCE",
+    "titleLine1": "Organized for",
+    "titleLine2": "excellence in ministry.",
+    "lede": "The A.M.E. Church operates in the doctrinal tradition of the Methodist Church with a hierarchical leadership structure. At Bethel, two primary boards work collaboratively under the Pastor's leadership to ensure the ministry integrity of our church.",
+    "items": [
+      {
+        "label": "SPIRITUAL FORMATION",
+        "name": "Steward Board",
+        "body": "Responsible for the spiritual formation of the body of Christ — ensuring the church is always moving, dwelling, and being on one accord with the principles of Christ. An extension of the Pastor, fostering spiritual maturity, prayer, and empowerment.",
+        "icon": "dove"
+      },
+      {
+        "label": "FINANCIAL STEWARDSHIP",
+        "name": "Steward Board (Finance)",
+        "body": "Responsible for the financial health of the physical church — ensuring finances parallel the church's growth, meeting the needs of the Pastor and family, and serving the congregation, building, and community at large.",
+        "icon": "coins"
+      },
+      {
+        "label": "PROPERTY & CARE",
+        "name": "Trustee Board",
+        "body": "Nominated by the Pastor and voted annually by the church membership, amenable to the Quarterly Conference. The Board of Trustees is responsible for the maintenance, upkeep, planning, and oversight of all church properties.",
+        "icon": "building"
+      },
+      {
+        "label": "COMMUNITY PARTNERSHIPS",
+        "name": "Beyond the Walls",
+        "body": "We foster partnerships with state and local government and grassroots organizations to ensure the necessary appropriation of services to the poor, the needy, and the disenfranchised — walking worthy of the calling toward kingdom building.",
+        "icon": "hands"
+      }
+    ]
+  },
+  "heritage": {
+    "eyebrow": "A GLOBAL DENOMINATION",
+    "titleLine1": "Part of a",
+    "titleLine2": "worldwide family.",
+    "paragraphs": [
+      "Bethel is part of a global denomination. The African Methodist Episcopal Church is divided into 19 Episcopal Districts — a worldwide church with congregations in South America, Europe, Africa, Canada, Bermuda, the Caribbean Islands, and the United States.",
+      "Founded in 1787 by Rev. Richard Allen — the first leader and a former slave — the A.M.E. Church was born out of the fight for dignity and equal worship. We are proud to be part of such a rich history and heritage, and we welcome others to join us in carrying on this tremendous legacy."
+    ],
+    "image": "",
+    "imageAlt": "The global A.M.E. Church",
+    "stats": [
+      { "big": "1787", "small": "FOUNDED" },
+      { "big": "19", "small": "EPISCOPAL DISTRICTS" },
+      { "big": "7", "small": "CONTINENTS REACHED" },
+      { "big": "1848", "small": "BETHEL SINCE" }
+    ]
+  },
+  "giving": {
+    "eyebrow": "STEWARDSHIP",
+    "titleLine1": "Where your treasure is,",
+    "titleLine2": "there your heart will be.",
+    "verseText": "For where your treasure is, there your heart will be also.",
+    "verseRef": "— MATTHEW 6:21",
+    "backgroundImage": "",
+    "backgroundImageAlt": "",
+    "ways": [
+      {
+        "icon": "online",
+        "title": "Give Online",
+        "body": "Offerings can be made through our Givify account or through our SUBSPLASH giving platform. Secure, simple, and convenient — from anywhere."
+      },
+      {
+        "icon": "person",
+        "title": "Give in Person",
+        "body": "Tithes and offerings are collected within the worship service experience. Special gifts and gifts for Missions are also received during service. Thank you for giving."
+      },
+      {
+        "icon": "envelope",
+        "title": "Mail a Check",
+        "body": "Place your check in a church envelope, indicate the purpose on the memo (Tithe or Offering), make payable to Bethel AME Church, and mail to: 3 Waterworks Road, Freehold, NJ 07728."
+      }
+    ]
+  },
+  "visit": {
+    "eyebrow": "PLAN A VISIT",
+    "titleLine1": "We'd love",
+    "titleLine2": "to see you.",
+    "address": "3 Waterworks Road, Freehold, NJ 07728",
+    "sundayWorship": "11:00 AM — In-person & Instagram Live",
+    "churchSchool": "9:45 AM — Youth & Adult",
+    "phone": "(732) 462-0826",
+    "phoneHref": "17324620826",
+    "email": "bethelfreehold@aol.com",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.5!2d-74.273!3d40.260!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s3+Waterworks+Rd%2C+Freehold%2C+NJ+07728!5e0!3m2!1sen!2sus!4v1700000000000"
   },
   "contactForm": {
     "title": "Get in Touch",
     "lede": "We'd love to hear from you. Fill out the form below and a member of our team will be in touch.",
     "submitLabel": "Send Message",
     "note": "We respond to every message. Thank you for reaching out."
+  },
+  "prayerForm": {
+    "title": "Prayer Requests",
+    "lede": "We would be honored to pray for you or someone you know. Our prayer team prays for every request we receive.",
+    "submitLabel": "Submit Prayer Request",
+    "note": "Your request is held in confidence by our prayer team."
   },
   "resources": {
     "eyebrow": "FEATURED RESOURCES",
@@ -79,170 +448,44 @@
       }
     ]
   },
-  "leadership": {
-    "eyebrow": "MINISTRY LEADERSHIP",
-    "titleLine1": "Servant leaders",
-    "titleLine2": "of the Kingdom.",
-    "lede": "Our ministry team is represented by some of the best servant leaders in the Kingdom of God — faithful, educated, and committed to Bethel's mission.",
-    "items": [
-      {
-        "name": "Rev. Dr. Cheryl Auguste",
-        "role": "ITINERANT ELDER",
-        "bio": "A native of Brooklyn, New York, Rev. Dr. Auguste accepted her call to preach at Bridge Street AWME Church in 1995. She was ordained an Itinerant Deacon in 2000 and an Itinerant Elder in 2012.",
-        "initials": "CA",
-        "image": ""
-      },
-      {
-        "name": "Evangelist Gloria Acker",
-        "role": "EVANGELIST",
-        "bio": "A native New Jerseyan who faithfully served at Trinity AME Church in Long Branch from 1955 to 2018 before transferring to Bethel in 2019. A licensed and certified Evangelist, trained through the NJ Ministerial Training Institute.",
-        "initials": "GA",
-        "image": ""
-      },
-      {
-        "name": "Bernadine Wilson-Gibson",
-        "role": "MINISTER OF MUSIC",
-        "bio": "Leading Bethel's music ministry with heart and dedication. Through music, our worship comes alive — lifting voices and spirits in praise week after week.",
-        "initials": "BW",
-        "image": "/assets/images/img_4268.jpg"
-      },
-      {
-        "name": "Sister Corliss Smith",
-        "role": "CHURCH ADMINISTRATOR",
-        "bio": "An awesome servant of the Lord and a true blessing to the Bethel A.M.E. Church ministry. Please contact her through the Church Office for any pastoral or clergy needs.",
-        "initials": "CS",
-        "image": ""
-      }
-    ]
+  "closing": {
+    "text": "So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.",
+    "reference": "— JAMES 2:17 (NLT)",
+    "backgroundImage": "",
+    "backgroundImageAlt": ""
   },
-  "brand": {
-    "logo": "/assets/images/untitled-design.png",
-    "logoAlt": "Bethel African Methodist Episcopal Church — The Church on the Hill",
-    "name": "Bethel A.M.E.",
-    "tagline": "THE CHURCH ON THE HILL",
-    "footerTagline": "Bethel African Methodist Episcopal Church has served the people of Freehold since 1848. A place of worship, a place of welcome, a place of sanctuary — open to all."
-  },
-  "education": {
-    "eyebrow": "CHRISTIAN EDUCATION",
-    "titleLine1": "Learn. Live.",
-    "titleLine2": "Serve.",
-    "lede": "Our Department of Christian Education develops comprehensive programs that lead to knowledge of the Holy Scriptures and the Christian Religion — and the implementation of those values in daily life.",
-    "classes": [
+  "events": {
+    "eyebrow": "GATHER WITH US",
+    "titleLine1": "Upcoming events",
+    "titleLine2": "at Bethel.",
+    "lede": "From worship and fellowship to community service and celebration — here's what's happening at Bethel.",
+    "featured": {
+      "eyebrow": "OUR NEXT EVENT",
+      "title": "Annual Holiday Gala",
+      "date": "December 2026",
+      "location": "Bethel AME Church · 3 Waterworks Road, Freehold, NJ",
+      "description": "Join us for our annual Holiday Gala — an evening of celebration, fellowship, and community. Details to come as we get closer to the date.",
+      "ctaLabel": "RSVP / Learn More",
+      "ctaHref": "#contact",
+      "image": "",
+      "imageAlt": "Bethel Holiday Gala"
+    },
+    "pastHeading": "Past Events",
+    "pastLede": "A look back at recent gatherings, celebrations, and community moments at Bethel.",
+    "past": [
       {
-        "time": "Sundays · 9:45 AM",
-        "title": "Youth Church School",
-        "body": "Classes for every age level, 5 years through 12th grade. Led by dedicated volunteers using reformed curriculum resources. Biblically based activities that help our children and youth creatively wonder about God's story and explore ways to share God's love."
+        "title": "2024 Annual Holiday Gala",
+        "date": "December 2024",
+        "description": "A beautiful evening of fellowship, music, and celebration with the Bethel family and friends from across the community.",
+        "image": "",
+        "imageAlt": "2024 Holiday Gala"
       },
       {
-        "time": "Sundays · 9:45 AM",
-        "title": "Adult Church School",
-        "body": "A variety of topics and teaching styles designed to meet the needs of adults who continue to study and seek to grow a faith relevant to their daily living. Come study God's Word in community."
-      },
-      {
-        "time": "Sundays · 11:00 AM",
-        "title": "Morning Worship",
-        "body": "In-person at 3 Waterworks Road and streamed live on Instagram. A time to gather, to praise, to pray, and to be fed for the week ahead. All are welcome."
-      }
-    ]
-  },
-  "connectional": {
-    "eyebrow": "STRUCTURED GOVERNANCE",
-    "titleLine1": "Organized for",
-    "titleLine2": "excellence in ministry.",
-    "lede": "The A.M.E. Church operates in the doctrinal tradition of the Methodist Church with a hierarchical leadership structure. At Bethel, two primary boards work collaboratively under the Pastor's leadership to ensure the ministry integrity of our church.",
-    "items": [
-      {
-        "label": "SPIRITUAL FORMATION",
-        "name": "Steward Board",
-        "body": "Responsible for the spiritual formation of the body of Christ — ensuring the church is always moving, dwelling, and being on one accord with the principles of Christ. An extension of the Pastor, fostering spiritual maturity, prayer, and empowerment."
-      },
-      {
-        "label": "FINANCIAL STEWARDSHIP",
-        "name": "Steward Board (Finance)",
-        "body": "Responsible for the financial health of the physical church — ensuring finances parallel the church's growth, meeting the needs of the Pastor and family, and serving the congregation, building, and community at large."
-      },
-      {
-        "label": "PROPERTY & CARE",
-        "name": "Trustee Board",
-        "body": "Nominated by the Pastor and voted annually by the church membership, amenable to the Quarterly Conference. The Board of Trustees is responsible for the maintenance, upkeep, planning, and oversight of all church properties."
-      },
-      {
-        "label": "COMMUNITY PARTNERSHIPS",
-        "name": "Beyond the Walls",
-        "body": "We foster partnerships with state and local government and grassroots organizations to ensure the necessary appropriation of services to the poor, the needy, and the disenfranchised — walking worthy of the calling toward kingdom building."
-      }
-    ]
-  },
-  "visit": {
-    "titleLine1": "We'd love",
-    "sundayWorship": "11:00 AM — In-person & Instagram Live",
-    "titleLine2": "to see you.",
-    "eyebrow": "PLAN A VISIT",
-    "phone": "(732) 462-0826",
-    "address": "3 Waterworks Road, Freehold, NJ 07728",
-    "phoneHref": "17324620826",
-    "churchSchool": "9:45 AM — Youth & Adult",
-    "email": "bethelfreehold@aol.com",
-    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.5!2d-74.273!3d40.260!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s3+Waterworks+Rd%2C+Freehold%2C+NJ+07728!5e0!3m2!1sen!2sus!4v1700000000000"
-  },
-  "prayerForm": {
-    "title": "Prayer Requests",
-    "lede": "We would be honored to pray for you or someone you know. Our prayer team prays for every request we receive.",
-    "submitLabel": "Submit Prayer Request",
-    "note": "Your request is held in confidence by our prayer team."
-  },
-  "mission": {
-    "beliefHeading": "One God. Infinite. Eternal.",
-    "missionStatement": "We exist to serve our community by meeting the spiritual, social, emotional, and physical needs of all who come through — and all who don't yet know us.",
-    "titleLine1": "Our mission",
-    "titleLine2": "is bigger than a building.",
-    "missionLabel": "OUR MISSION",
-    "eyebrow": "WHAT WE DO",
-    "beliefStatement": "We believe in a God who is infinite and eternal, omniscient (all-knowing), omnipotent (all-powerful), and omnipresent (everywhere at the same time) — who has been manifested and revealed in our Lord and Savior Jesus Christ. \"So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.\" — James 2:17 (NLT)",
-    "bullets": [
-      "Serve the community by meeting spiritual, social, emotional, and physical needs",
-      "Encourage spiritual formation through worship, study of God's Word, and living out the teaching of Jesus Christ",
-      "Support the growth and development of youth and young adults to live out the plan and purpose of their lives",
-      "Exercise our stewardship through the giving of our tithes, offerings, gifts, and graces"
-    ],
-    "beliefLabel": "WHAT WE BELIEVE",
-    "missionHeading": "To move beyond the walls of the church."
-  },
-  "about": {
-    "eyebrow": "WELCOME HOME",
-    "titleLine1": "Welcome to",
-    "titleLine2": "Bethel.",
-    "paragraphs": [
-      "We are glad you are visiting with us today. This site is filled with information about our denomination, our local church, and the ministries that we offer. Take a moment to learn more about us — and consider becoming part of our family.",
-      "Our church is located at 3 Waterworks Road in Freehold, NJ. Many in Freehold Borough know us simply as \"the church on the hill.\" But our roots stretch back further than the building — to the 1690s, when free Black residents formed a village called Squirrel Town.",
-      "God bless you."
-    ],
-    "ctaLabel": "Meet Our Pastor",
-    "ctaHref": "#pastor",
-    "image": "/assets/images/img_4268.jpg",
-    "imageAlt": "Inside Bethel AME — a place of welcome"
-  },
-  "giving": {
-    "eyebrow": "STEWARDSHIP",
-    "titleLine1": "Where your treasure is,",
-    "titleLine2": "there your heart will be.",
-    "verseText": "For where your treasure is, there your heart will be also.",
-    "verseRef": "— MATTHEW 6:21",
-    "ways": [
-      {
-        "icon": "✦",
-        "title": "Give Online",
-        "body": "Offerings can be made through our Givify account or through our SUBSPLASH giving platform. Secure, simple, and convenient — from anywhere."
-      },
-      {
-        "icon": "✦",
-        "title": "Give in Person",
-        "body": "Tithes and offerings are collected within the worship service experience. Special gifts and gifts for Missions are also received during service. Thank you for giving."
-      },
-      {
-        "icon": "✦",
-        "title": "Mail a Check",
-        "body": "Place your check in a church envelope, indicate the purpose on the memo (Tithe or Offering), make payable to Bethel AME Church, and mail to: 3 Waterworks Road, Freehold, NJ 07728."
+        "title": "2023 Annual Holiday Gala",
+        "date": "December 2023",
+        "description": "Our annual gala bringing together the Bethel congregation for an evening of joy, gratitude, and togetherness.",
+        "image": "",
+        "imageAlt": "2023 Holiday Gala"
       }
     ]
   },
@@ -251,239 +494,31 @@
     "contactFormAction": "",
     "prayerFormAction": ""
   },
-  "faithVerse": {
-    "text": "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life.",
-    "reference": "— John 3:16"
-  },
-  "history": {
-    "eyebrow": "OUR STORY",
-    "titleLine1": "Outlived slavery.",
-    "titleLine2": "Outlived every storm.",
-    "lede": "From a village of free Black residents in the 1690s to a global A.M.E. denomination today, Bethel's story is a story of endurance, faith, and community.",
-    "timeline": [
-      {
-        "year": "1690s",
-        "title": "Squirrel Town",
-        "body": "Free Black residents form a village behind what is today the St. Rose of Lima cemetery on Route 522 in Freehold Township. This is the community Bethel would eventually grow from."
-      },
-      {
-        "year": "1787",
-        "title": "The A.M.E. Denomination is Born",
-        "body": "Rev. Richard Allen — the first leader and a former slave — founds the African Methodist Episcopal Church. Bethel is part of a denomination born out of the fight for dignity and equal worship."
-      },
-      {
-        "year": "1848",
-        "title": "Bethel Begins",
-        "body": "Bethel is founded in the Squirrel Town village, serving Black worshipers who had been excluded from predominantly white churches. From the very beginning, Bethel is a sanctuary."
-      },
-      {
-        "year": "1867",
-        "title": "Officially Incorporated",
-        "body": "Bethel is officially established and incorporated as a member of the A.M.E. Church denomination. The original building is constructed."
-      },
-      {
-        "year": "The Peach Orchard Years",
-        "title": "A Move to Freehold Borough",
-        "body": "After the Squirrel Town years, the congregation moves to a small building in a Freehold Borough area known as the Peach Orchard — today called Avenue A."
-      },
-      {
-        "year": "1988",
-        "title": "The Church on the Hill",
-        "body": "A new structure is completed and Bethel relocates to its present location at 3 Waterworks Road — becoming the beloved \"church on the hill\" that generations of Freehold residents know today."
-      },
-      {
-        "year": "Today",
-        "title": "Beyond the Walls",
-        "body": "Bethel continues to evolve — restoring the historic Squirrel Town Cemetery where Black Civil War veterans are buried, welcoming new members of every background, and living out its mission to move beyond the walls of the church to serve the community."
-      }
-    ]
-  },
-  "closing": {
-    "text": "So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.",
-    "reference": "— JAMES 2:17 (NLT)"
-  },
-  "pastor": {
-    "eyebrow": "MEET OUR PASTOR",
-    "headline": "A Shepherd for This Flock.",
-    "name": "Reverend Ronald L. Sparks",
-    "title": "Senior Pastor",
-    "paragraphs": [
-      "Rev. Ronald L. Sparks has been serving in ministry for nearly 20 years. A native of Toledo, Ohio, he is a \"preacher's kid\" — following in the footsteps of his mother, Rev. Shirley A. Sparks, Pastor of Walls Memorial Chapel AME Zion Church in Toledo.",
-      "Rev. Sparks is a U.S. Air Force veteran of six years. He holds a Bachelor of Science in Business Management from the University of Maryland University College and a Master of Divinity from Drew University Theological School.",
-      "He accepted his call to ministry in 1997 and was mentored by his father in the ministry, the late Rev. Dr. Kenneth L. Saunders, former Pastor of North Stelton AME Church in Piscataway, NJ. He was ordained an Itinerant Deacon in 1998 and an Itinerant Elder in 2001. Rev. Sparks began his pastoral ministry in 2005 at St. Paul AME Church in South Bound Brook, and today serves as Pastor of Bethel AME Church in Freehold."
-    ],
-    "noteLabel": "A NOTE FROM PASTOR SPARKS",
-    "note": "Sister Sparks and I greet you in the name of our Lord and Savior Jesus Christ. Thank you for visiting our church through the various digital mediums. We are excited to have you as part of our ministry. Please visit often — and keep up with the programs, events, and activities we have planned. God bless you.",
-    "image": "/assets/images/img_4517.jpg"
-  },
-  "pullquote": {
-    "quoteBefore": "I've been alive a long time, and I've endured a lot. That's one of the reasons the church really appealed to us. It's the one place where we could find",
-    "quoteHighlight": "sanctuary",
-    "quoteAfter": ". We could be equal.",
-    "author": "BIGERTON \"BUDDY\" LEWIS",
-    "authorContext": "Age 93 · World War II Veteran · Bethel Member"
-  },
-  "hero": {
-    "carousel": [
-      {
-        "image": "/assets/images/img_4535.jpg",
-        "alt": "The Church on the Hill",
-        "placeholderText": "The Church on the Hill",
-        "tone": "navy"
-      },
-      {
-        "image": "/assets/images/img_4460.jpg",
-        "alt": "A community of faith",
-        "placeholderText": "A community of faith since 1848",
-        "tone": "gold"
-      },
-      {
-        "image": "/assets/images/img_4553.jpg",
-        "alt": "Beyond the walls",
-        "placeholderText": "Beyond the walls — a sanctuary for all",
-        "tone": "sky"
-      }
-    ],
-    "ctaLabel": "Plan a Visit",
-    "headlineLine1": "The Church",
-    "eyebrow": "SERVING FREEHOLD SINCE 1848",
-    "headlineLine2": "on the Hill",
-    "headlineLine3": "",
-    "sinceCaption": "A.M.E. incorporated 1867. Built on the foundations of Squirrel Town.",
-    "imageAlt": "Bethel AME Church — the Church on the Hill in Freehold, NJ",
-    "ctaSecondaryHref": "#history",
-    "ctaSecondaryLabel": "Our Story",
-    "serviceTimes": [
-      {
-        "label": "SUNDAY WORSHIP",
-        "time": "11:00 AM"
-      },
-      {
-        "label": "CHURCH SCHOOL",
-        "time": "9:45 AM"
-      },
-      {
-        "label": "WATCH LIVE",
-        "time": "Instagram"
-      }
-    ],
-    "subheadline": "Bethel African Methodist Episcopal Church has been a place of worship, welcome, and sanctuary in Freehold, New Jersey for over 175 years. Join us as we move beyond the walls to serve our community.",
-    "sinceYear": "1848",
-    "sinceLabel": "EST.",
-    "image": "/assets/images/img_4517.jpg",
-    "ctaHref": "#visit"
-  },
   "footer": {
+    "exploreLinks": [
+      { "label": "About Bethel", "href": "#about" },
+      { "label": "Our History", "href": "#history" },
+      { "label": "Meet the Pastor", "href": "#pastor" },
+      { "label": "Ministries", "href": "#ministries" },
+      { "label": "Events", "href": "#events" },
+      { "label": "Giving", "href": "#giving" },
+      { "label": "Plan a Visit", "href": "#visit" }
+    ],
+    "connectLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "Contact Us", "href": "#contact" },
+      { "label": "Prayer Request", "href": "#contact" }
+    ],
+    "visitAddress": "3 Waterworks Road",
+    "visitCityState": "Freehold, NJ 07728",
     "visitPhone": "(732) 462-0826",
+    "visitPhoneHref": "17324620826",
+    "visitEmail": "bethelfreehold@aol.com",
+    "copyright": "Bethel A.M.E. Church · Freehold, NJ. All rights reserved.",
     "designerCredit": {
       "label": "By Chevelle",
       "href": "https://bychevelle.com"
-    },
-    "exploreLinks": [
-      {
-        "label": "About Bethel",
-        "href": "#about"
-      },
-      {
-        "label": "Our History",
-        "href": "#history"
-      },
-      {
-        "label": "Meet the Pastor",
-        "href": "#pastor"
-      },
-      {
-        "label": "Ministries",
-        "href": "#ministries"
-      },
-      {
-        "label": "Giving",
-        "href": "#giving"
-      },
-      {
-        "label": "Plan a Visit",
-        "href": "#visit"
-      }
-    ],
-    "copyright": "Bethel A.M.E. Church · Freehold, NJ. All rights reserved.",
-    "visitAddress": "3 Waterworks Road",
-    "visitPhoneHref": "17324620826",
-    "connectLinks": [
-      {
-        "label": "Instagram",
-        "href": "https://instagram.com/"
-      },
-      {
-        "label": "Facebook",
-        "href": "https://facebook.com/"
-      },
-      {
-        "label": "Contact Us",
-        "href": "#contact"
-      },
-      {
-        "label": "Prayer Request",
-        "href": "#contact"
-      }
-    ],
-    "visitEmail": "bethelfreehold@aol.com",
-    "visitCityState": "Freehold, NJ 07728"
-  },
-  "ministries": {
-    "eyebrow": "CONNECTIONAL MINISTRIES",
-    "titleLine1": "Four ways",
-    "titleLine2": "to get involved.",
-    "lede": "As a global institution, the A.M.E. Church operates across continents — and Bethel mirrors that connectedness right here in Freehold. Here are a few of our key connectional ministries.",
-    "items": [
-      {
-        "label": "FOR EVERYONE",
-        "title": "Lay Organization",
-        "body": "The organized lay movement of the A.M.E. Church operates as a vital force for good — free, independent, and motivated only by the general welfare of African Methodism. We keep the memory of Richard Allen alive and educate the laity in the full program of the Church."
-      },
-      {
-        "label": "FOR WOMEN",
-        "title": "Women's Missionary Society",
-        "body": "As women called to discipleship — growing in knowledge of God through Jesus Christ, committed to support the mission of the Church, and empowered by the Holy Spirit — we are challenged to help one another engage in ministry and action."
-      },
-      {
-        "label": "FOR YOUTH",
-        "title": "Young People's Division",
-        "body": "Under the leadership of the Women's Missionary Society, the YPD provides meaningful youth training and leadership experience in all areas of church life — evangelism, Christian social relations, and education programs."
-      },
-      {
-        "label": "FOR MEN",
-        "title": "Sons of Allen",
-        "body": "Our mission is to reach far and wide to bring men to Christ, to organize and train men for the work of the ministry, to teach the history of our church, and to share our faith in the context of our daily lives."
-      }
-    ]
-  },
-  "heritage": {
-    "eyebrow": "A GLOBAL DENOMINATION",
-    "titleLine1": "Part of a",
-    "titleLine2": "worldwide family.",
-    "paragraphs": [
-      "Bethel is part of a global denomination. The African Methodist Episcopal Church is divided into 19 Episcopal Districts — a worldwide church with congregations in South America, Europe, Africa, Canada, Bermuda, the Caribbean Islands, and the United States.",
-      "Founded in 1787 by Rev. Richard Allen — the first leader and a former slave — the A.M.E. Church was born out of the fight for dignity and equal worship. We are proud to be part of such a rich history and heritage, and we welcome others to join us in carrying on this tremendous legacy."
-    ],
-    "image": "/assets/images/img_4535.jpg",
-    "imageAlt": "The global A.M.E. Church",
-    "stats": [
-      {
-        "big": "1787",
-        "small": "FOUNDED"
-      },
-      {
-        "big": "19",
-        "small": "EPISCOPAL DISTRICTS"
-      },
-      {
-        "big": "7",
-        "small": "CONTINENTS REACHED"
-      },
-      {
-        "big": "1848",
-        "small": "BETHEL SINCE"
-      }
-    ]
+    }
   }
 }
