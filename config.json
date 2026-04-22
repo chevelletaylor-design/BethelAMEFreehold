@@ -214,7 +214,7 @@
     "sundayWorship": "11:00 AM — In-person & Instagram Live",
     "titleLine2": "to see you.",
     "eyebrow": "PLAN A VISIT",
-    "backgroundImage": "",
+    "backgroundImage": "/assets/images/img_0521.jpg",
     "phone": "(732) 462-0826",
     "address": "3 Waterworks Road, Freehold, NJ 07728",
     "phoneHref": "17324620826",
@@ -361,7 +361,7 @@
   "closing": {
     "text": "So you see, faith by itself isn't enough. Unless it produces good deeds, it is dead and useless.",
     "reference": "— JAMES 2:17 (NLT)",
-    "backgroundImage": "/assets/images/img_4472.jpg",
+    "backgroundImage": "",
     "backgroundImageAlt": ""
   },
   "pastor": {
@@ -433,7 +433,7 @@
         "title": "2024 Annual Holiday Gala",
         "date": "December 2024",
         "description": "A beautiful evening of fellowship, music, and celebration with the Bethel family and friends from across the community.",
-        "image": "",
+        "image": "/assets/images/img_0521.jpg",
         "imageAlt": "2024 Holiday Gala"
       },
       {
