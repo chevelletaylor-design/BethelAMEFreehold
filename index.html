@@ -1719,11 +1719,16 @@
     .ed-classes, .giving-ways { grid-template-columns: 1fr; }
   }
   @media (max-width: 900px) {
-    /* Nav: collapse 3-col grid to hamburger + centered logo */
+    /* Nav: simple flex layout on mobile - hamburger left, logo center, empty right */
     nav.site-nav {
-      grid-template-columns: auto 1fr auto;
-      padding: 12px 20px;
-      gap: 12px;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      grid-template-columns: none !important;
+      padding: 10px 18px !important;
+      gap: 0 !important;
+      min-height: 62px;
     }
     .nav-links-left, .nav-links-right {
       display: none;
@@ -1734,17 +1739,39 @@
       justify-content: center !important;
     }
     .nav-links-left.open, .nav-links-right.open { display: flex; }
-    .mobile-toggle { display: block; grid-column: 1; }
-    .nav-logo-center { grid-column: 2; justify-self: center; width: 50px; height: 50px; }
-    .nav-logo-center > div, .nav-logo-center img, .nav-logo-center svg { max-width: 50px; max-height: 50px; }
-    .nav-cta { grid-column: 3; padding: 9px 16px; font-size: 11px !important; letter-spacing: 0.08em !important; }
-    /* Hide the nav-cta that lives INSIDE the right link group on mobile (use the top-level one if duplicated) */
+    .mobile-toggle { display: block; order: 1; flex: 0 0 auto; }
+    .nav-logo-center {
+      order: 2;
+      flex: 0 0 auto;
+      width: 44px !important;
+      height: 44px !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .nav-logo-center > div, .nav-logo-center img, .nav-logo-center svg {
+      max-width: 44px !important;
+      max-height: 44px !important;
+    }
+    /* Right-side CTA on mobile (a placeholder so layout stays balanced) */
+    .nav-cta {
+      order: 3;
+      flex: 0 0 auto;
+      padding: 8px 14px !important;
+      font-size: 10px !important;
+      letter-spacing: 0.08em !important;
+    }
+    /* Hide the nav-cta that lives INSIDE the right link group on mobile */
     .nav-links-right .nav-cta { display: none; }
 
-    section, .hero, .about, .pullquote, .history, .cultural, .mission, .verse, .pastor, .leadership, .ministries, .christian-ed, .connectional, .heritage, .events, .giving, .visit, .contact-forms, .resources, .closing { padding: 90px 22px; }
+    section, .hero, .about, .pullquote, .history, .cultural, .mission, .verse, .pastor, .leadership, .ministries, .christian-ed, .connectional, .heritage, .events, .giving, .visit, .contact-forms, .resources, .closing { padding: 70px 22px; }
+    .about { padding: 60px 22px 80px; }
+    .cultural { padding: 80px 22px 50px; }
+    .verse { padding: 60px 22px; }
 
     /* Hero — stack content first, then flanking photos hide on mobile */
-    .hero { padding: 120px 22px 60px; }
+    .hero { padding: 90px 22px 50px; }
     .hero h1 { font-size: clamp(2.2rem, 10vw, 3.8rem); letter-spacing: -0.025em; line-height: 0.98; }
     .hero-layout { grid-template-columns: 1fr; gap: 36px; display: flex; flex-direction: column; }
     .hero-inner { order: 1; text-align: center; }
