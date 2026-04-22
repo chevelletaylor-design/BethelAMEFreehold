@@ -170,9 +170,21 @@
   /* ==================== HERO (centered editorial) ==================== */
   .hero {
     position: relative;
-    padding: 160px 40px 80px;
+    padding: 140px 40px 70px;
     overflow: hidden;
     background: var(--cream);
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  }
+  .hero-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.1;
+    mix-blend-mode: multiply;
+  }
+  .hero-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 20%, var(--cream) 80%);
   }
   .hero-layout {
     display: grid;
@@ -181,6 +193,8 @@
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
   .hero-inner {
     text-align: center;
@@ -414,7 +428,7 @@
   /* ==================== ABOUT / WELCOME ==================== */
   .about {
     background: var(--cream-deep);
-    padding: 140px 40px;
+    padding: 90px 40px 120px;
     position: relative;
     overflow: hidden;
   }
@@ -611,7 +625,7 @@
   /* ==================== CULTURAL / DIFFERENTIATION ==================== */
   .cultural {
     background: var(--cream);
-    padding: 140px 40px;
+    padding: 140px 40px 80px;
   }
   .cultural-grid {
     display: grid;
@@ -722,9 +736,24 @@
   }
   .verse {
     text-align: center;
-    padding: 100px 40px;
+    padding: 80px 40px;
     background: var(--cream-deep);
+    position: relative;
+    overflow: hidden;
   }
+  .verse-bg {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  }
+  .verse-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.12;
+    mix-blend-mode: multiply;
+  }
+  .verse-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 25%, var(--cream-deep) 85%);
+  }
+  .verse > * { position: relative; z-index: 1; }
   .verse-text {
     font-family: 'Fraunces', serif;
     font-style: italic;
@@ -751,7 +780,7 @@
   }
   .pastor-grid {
     display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-columns: 0.8fr 1.2fr;
     gap: 80px;
     align-items: center;
     max-width: 1280px;
@@ -759,47 +788,98 @@
   }
   .pastor-visual {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 14px;
-    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 420px;
   }
-  .pastor-photo-tile {
+  .pastor-carousel {
     position: relative;
+    aspect-ratio: 4/5;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    background: var(--navy);
   }
-  .pastor-photo-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .pastor-photo-tile .photo-placeholder-4 {
+  .pastor-carousel-track {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .pastor-slide {
+    flex: 0 0 100%;
+    width: 100%; height: 100%;
+    position: relative;
+  }
+  .pastor-slide img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .pastor-slide-placeholder {
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
     color: var(--cream);
     font-family: 'Fraunces', serif;
     font-style: italic;
-    font-size: 13px;
+    font-size: 18px;
     text-align: center;
-    padding: 18px;
-    line-height: 1.3;
+    padding: 40px;
   }
-  .pastor-photo-tile.tone-navy .photo-placeholder-4 { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-ink) 100%); }
-  .pastor-photo-tile.tone-gold .photo-placeholder-4 { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%); color: var(--navy); }
-  .pastor-photo-tile.tone-sky .photo-placeholder-4 { background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%); }
-  .pastor-photo-tile.tone-green .photo-placeholder-4 { background: linear-gradient(135deg, var(--green) 0%, #2A6B37 100%); }
-  .pastor-photo-tile.tile-1 { transform: rotate(-1.5deg); }
-  .pastor-photo-tile.tile-2 { transform: rotate(1.5deg); }
-  .pastor-photo-tile.tile-3 { transform: rotate(1deg); }
-  .pastor-photo-tile.tile-4 { transform: rotate(-1deg); }
-  .pastor-visual-accent {
+  .pastor-slide-placeholder.tone-navy { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-ink) 100%); }
+  .pastor-slide-placeholder.tone-gold { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%); color: var(--navy); }
+  .pastor-slide-placeholder.tone-sky { background: linear-gradient(135deg, var(--sky) 0%, var(--navy) 100%); }
+  .pastor-slide-placeholder.tone-green { background: linear-gradient(135deg, var(--green) 0%, #2A6B37 100%); }
+  .pastor-carousel-accent {
     position: absolute;
-    inset: -14px;
+    bottom: -16px; left: -16px;
+    width: 55%; height: 50%;
     background: var(--gold);
-    border-radius: 10px;
+    border-radius: 6px;
     z-index: -1;
-    transform: rotate(-2deg);
-    opacity: 0.85;
+    transform: rotate(-3deg);
   }
+  .pastor-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .pastor-carousel-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: rgba(14, 42, 75, 0.2);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s;
+  }
+  .pastor-carousel-dot.active {
+    background: var(--gold);
+    width: 30px;
+    border-radius: 999px;
+  }
+  .pastor-carousel-dot:hover:not(.active) {
+    background: rgba(14, 42, 75, 0.4);
+  }
+  .pastor-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 252, 245, 0.92);
+    border: none;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--navy);
+    box-shadow: 0 6px 20px -6px rgba(14, 42, 75, 0.35);
+    transition: all 0.25s;
+    z-index: 2;
+  }
+  .pastor-carousel-arrow:hover { background: var(--gold); color: var(--navy); transform: translateY(-50%) scale(1.06); }
+  .pastor-carousel-arrow.prev { left: 12px; }
+  .pastor-carousel-arrow.next { right: 12px; }
   .pastor-content .eyebrow-wrap { margin-bottom: 22px; }
   .pastor-content h2 {
     font-family: 'Fraunces', serif;
@@ -855,12 +935,16 @@
     flex-direction: column;
   }
   .leader-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
-  .leader-card.expanded { grid-column: 1 / -1; transform: none; }
+  .leader-card.expanded { grid-column: 1 / -1; transform: none; display: grid; grid-template-columns: 240px 1fr; gap: 0; align-items: start; }
   .leader-card.expanded:hover { transform: none; }
-  .leader-card.expanded .leader-card-inner { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: flex-start; padding: 0; }
-  .leader-card.expanded .leader-img { aspect-ratio: 4/5; max-width: 260px; }
-  .leader-card.expanded .leader-body { padding: 40px 40px 40px 0; }
-  .leader-card-inner { display: contents; }
+  .leader-card.expanded .leader-img { aspect-ratio: 4/5; max-width: 240px; }
+  .leader-card.expanded .leader-body { padding: 40px 44px 44px; }
+  .leader-card.expanded .leader-teaser { display: none; }
+  .leader-card.expanded .leader-name { font-size: 26px; margin-bottom: 6px; line-height: 1.15; }
+  .leader-card.expanded .leader-role { margin-bottom: 24px; }
+  .leader-card.expanded .leader-expand-btn { margin-top: 0; margin-bottom: 24px; }
+  .leader-card.expanded .leader-full-bio { margin-top: 0; padding-top: 0; border-top: none; }
+  .leader-card-inner { display: contents; } /* legacy — wrapper not used, safe to ignore */
   .leader-img {
     aspect-ratio: 4/5;
     background: linear-gradient(135deg, var(--navy) 0%, var(--sky) 100%);
@@ -1126,20 +1210,23 @@
     line-height: 1.75;
   }
   .heritage-stats {
-    display: flex; gap: 40px; margin-top: 36px;
-    padding-top: 32px; border-top: 1px solid var(--rule);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 40px;
+    margin-top: 36px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
   }
   .heritage-stat .big {
     font-family: 'Fraunces', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: clamp(1.8rem, 3.2vw, 2.8rem);
     font-weight: 500;
     color: var(--gold-deep);
     line-height: 1;
     letter-spacing: -0.02em;
   }
   .heritage-stat .small {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--ink-soft);
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -1354,7 +1441,22 @@
   .visit {
     background: var(--cream);
     padding: 140px 40px;
+    position: relative;
+    overflow: hidden;
   }
+  .visit-bg {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  }
+  .visit-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.1;
+    mix-blend-mode: multiply;
+  }
+  .visit-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 20%, var(--cream) 85%);
+  }
+  .visit-grid { position: relative; z-index: 1; }
   .visit-grid {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
@@ -1653,9 +1755,15 @@
     .ed-class-body { padding: 28px 22px 30px; }
 
     /* Leadership expanded card — stack image + body */
-    .leader-card.expanded .leader-card-inner { grid-template-columns: 1fr; gap: 0; }
+    .leader-card.expanded { grid-template-columns: 1fr; }
     .leader-card.expanded .leader-img { max-width: 100%; aspect-ratio: 4/3; }
-    .leader-card.expanded .leader-body { padding: 28px 26px 32px; }
+    .leader-card.expanded .leader-body { padding: 32px 26px 36px; }
+    .leader-card.expanded .leader-name { font-size: 22px; }
+
+    /* Heritage stats single row on mobile */
+    .heritage-stats { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .heritage-stat .big { font-size: clamp(1.4rem, 5vw, 2rem); }
+    .heritage-stat .small { font-size: 9px; letter-spacing: 0.12em; }
 
     /* Events — stack featured event, keep past events as grid */
     .events-featured { grid-template-columns: 1fr; gap: 40px; }
@@ -1853,7 +1961,6 @@
   // Connectional ministries
   const connHTML = cfg.connectional.items.map((c, i) => `
     <div class="conn-card reveal delay-${i % 3}">
-      <div class="conn-icon">${renderIcon(c.icon || 'dove')}</div>
       <div class="conn-role">${safe(c.label)}</div>
       <h4>${safe(c.name)}</h4>
       <p>${safe(c.body)}</p>
@@ -1863,7 +1970,6 @@
   // Giving ways
   const givingHTML = cfg.giving.ways.map(w => `
     <div class="give-way reveal">
-      <div class="give-way-icon">${renderIcon(w.icon || 'online')}</div>
       <h4>${safe(w.title)}</h4>
       <p>${safe(w.body)}</p>
     </div>
@@ -1900,15 +2006,17 @@
   const heroPhotoLeft = heroPhotoImg(cfg.hero.photoLeft, 'left');
   const heroPhotoRight = heroPhotoImg(cfg.hero.photoRight, 'right');
 
-  // Pastor 4-photo collage
+  // Pastor portrait carousel
   const pastorPhotos = (cfg.pastor.photos && cfg.pastor.photos.length > 0) ? cfg.pastor.photos : [];
-  const pastorPhotosHTML = pastorPhotos.slice(0, 4).map((p, i) => {
-    const tone = p.tone || ['navy', 'gold', 'sky', 'green'][i];
+  const pastorSlidesCount = pastorPhotos.length || 1;
+  const pastorSlidesHTML = (pastorPhotos.length > 0 ? pastorPhotos : [{ tone: 'navy', alt: 'Pastor Sparks' }]).map((p, i) => {
+    const tone = p.tone || ['navy', 'gold', 'sky', 'green'][i % 4];
     const inner = p.image && p.image !== ''
       ? `<img src="${safe(p.image)}" alt="${safe(p.alt || 'Pastor Sparks')}" />`
-      : `<div class="photo-placeholder-4">Photo ${i + 1}</div>`;
-    return `<div class="pastor-photo-tile tile-${i + 1} tone-${safe(tone)}">${inner}</div>`;
+      : `<div class="pastor-slide-placeholder tone-${safe(tone)}">Pastor Sparks<br/>${safe(cfg.pastor.title || '')}</div>`;
+    return `<div class="pastor-slide">${inner}</div>`;
   }).join('');
+  const pastorDotsHTML = Array.from({ length: pastorSlidesCount }).map((_, i) => `<button class="pastor-carousel-dot ${i === 0 ? 'active' : ''}" data-idx="${i}" aria-label="Go to photo ${i + 1}"></button>`).join('');
 
   // Events
   const ev = cfg.events || {};
@@ -1957,6 +2065,7 @@
 
     <!-- ========== HERO (centered editorial + flanking collage) ========== -->
     <section id="home" class="hero">
+      ${cfg.hero.backgroundImage && cfg.hero.backgroundImage !== '' ? `<div class="hero-bg"><img src="${safe(cfg.hero.backgroundImage)}" alt="${safe(cfg.hero.backgroundImageAlt || '')}" /></div>` : ''}
       <div class="hero-layout">
         <div class="hero-photo-card left">
           <div class="accent-block"></div>
@@ -2076,6 +2185,7 @@
 
     <!-- ========== CLOSING VERSE (FAITH) ========== -->
     <section class="verse">
+      ${cfg.faithVerse.backgroundImage && cfg.faithVerse.backgroundImage !== '' ? `<div class="verse-bg"><img src="${safe(cfg.faithVerse.backgroundImage)}" alt="${safe(cfg.faithVerse.backgroundImageAlt || '')}" /></div>` : ''}
       <p class="verse-text">"${safe(cfg.faithVerse.text)}"</p>
       <p class="verse-ref">${safe(cfg.faithVerse.reference)}</p>
     </section>
@@ -2120,8 +2230,21 @@
     <section id="pastor" class="pastor">
       <div class="pastor-grid">
         <div class="pastor-visual reveal">
-          <div class="pastor-visual-accent"></div>
-          ${pastorPhotosHTML}
+          <div class="pastor-carousel-accent"></div>
+          <div class="pastor-carousel" id="pastorCarousel">
+            <div class="pastor-carousel-track" id="pastorCarouselTrack">
+              ${pastorSlidesHTML}
+            </div>
+            ${pastorSlidesCount > 1 ? `
+              <button class="pastor-carousel-arrow prev" id="pastorPrev" aria-label="Previous photo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="pastor-carousel-arrow next" id="pastorNext" aria-label="Next photo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            ` : ''}
+          </div>
+          ${pastorSlidesCount > 1 ? `<div class="pastor-carousel-dots" id="pastorDots">${pastorDotsHTML}</div>` : ''}
         </div>
         <div class="pastor-content reveal delay-1">
           <div class="eyebrow-wrap">
@@ -2296,6 +2419,7 @@
 
     <!-- ========== VISIT ========== -->
     <section id="visit" class="visit">
+      ${cfg.visit.backgroundImage && cfg.visit.backgroundImage !== '' ? `<div class="visit-bg"><img src="${safe(cfg.visit.backgroundImage)}" alt="${safe(cfg.visit.backgroundImageAlt || '')}" /></div>` : ''}
       <div class="visit-grid">
         <div class="visit-info reveal">
           <div class="eyebrow-wrap">
@@ -2520,6 +2644,58 @@
   }
   handleForm('contactForm', contactAction);
   handleForm('prayerForm', prayerAction);
+
+  // ==================== PASTOR CAROUSEL ====================
+  (function initPastorCarousel() {
+    const track = document.getElementById('pastorCarouselTrack');
+    const dots = document.querySelectorAll('.pastor-carousel-dot');
+    const prev = document.getElementById('pastorPrev');
+    const next = document.getElementById('pastorNext');
+    const carousel = document.getElementById('pastorCarousel');
+    if (!track || dots.length <= 1) return;
+
+    let current = 0;
+    const total = dots.length;
+    let autoTimer = null;
+
+    function goTo(idx) {
+      current = (idx + total) % total;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+    function startAuto() {
+      stopAuto();
+      autoTimer = setInterval(() => goTo(current + 1), 6000);
+    }
+    function stopAuto() { if (autoTimer) { clearInterval(autoTimer); autoTimer = null; } }
+
+    if (prev) prev.addEventListener('click', () => { goTo(current - 1); startAuto(); });
+    if (next) next.addEventListener('click', () => { goTo(current + 1); startAuto(); });
+    dots.forEach(d => d.addEventListener('click', () => {
+      goTo(parseInt(d.dataset.idx, 10));
+      startAuto();
+    }));
+
+    if (carousel) {
+      carousel.addEventListener('mouseenter', stopAuto);
+      carousel.addEventListener('mouseleave', startAuto);
+    }
+
+    let touchStartX = 0;
+    if (carousel) {
+      carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAuto();
+      }, { passive: true });
+      carousel.addEventListener('touchend', (e) => {
+        const diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+        startAuto();
+      }, { passive: true });
+    }
+
+    startAuto();
+  })();
 
   // ==================== LEADERSHIP EXPAND/COLLAPSE ====================
   document.querySelectorAll('.leader-expand-btn').forEach(btn => {
