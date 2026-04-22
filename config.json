@@ -247,7 +247,7 @@
     ],
     "beliefLabel": "WHAT WE BELIEVE",
     "missionHeading": "To move beyond the walls of the church.",
-    "beliefImage": "/assets/images/img_4335.jpg",
+    "beliefImage": "/assets/images/img_4467.jpg",
     "missionImageAlt": "Bethel serving the community"
   },
   "about": {
@@ -298,7 +298,7 @@
   "faithVerse": {
     "text": "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life.",
     "reference": "— John 3:16",
-    "backgroundImage": "/assets/images/img_0633.jpg",
+    "backgroundImage": "",
     "backgroundImageAlt": ""
   },
   "history": {
@@ -564,28 +564,28 @@
         "label": "FOR EVERYONE",
         "title": "Lay Organization",
         "body": "The organized lay movement of the A.M.E. Church operates as a vital force for good — free, independent, and motivated only by the general welfare of African Methodism. We keep the memory of Richard Allen alive and educate the laity in the full program of the Church.",
-        "image": "",
+        "image": "/assets/images/img_0262.jpg",
         "imageAlt": "Lay Organization at Bethel"
       },
       {
         "label": "FOR WOMEN",
         "title": "Women's Missionary Society",
         "body": "As women called to discipleship — growing in knowledge of God through Jesus Christ, committed to support the mission of the Church, and empowered by the Holy Spirit — we are challenged to help one another engage in ministry and action.",
-        "image": "",
+        "image": "/assets/images/img_4406.jpg",
         "imageAlt": "Women's Missionary Society"
       },
       {
         "label": "FOR YOUTH",
         "title": "Young People's Division",
         "body": "Under the leadership of the Women's Missionary Society, the YPD provides meaningful youth training and leadership experience in all areas of church life — evangelism, Christian social relations, and education programs.",
-        "image": "",
+        "image": "/assets/images/481895514_671849582076737_2399930819821223814_n.jpg",
         "imageAlt": "Young People's Division"
       },
       {
         "label": "FOR MEN",
         "title": "Sons of Allen",
         "body": "Our mission is to reach far and wide to bring men to Christ, to organize and train men for the work of the ministry, to teach the history of our church, and to share our faith in the context of our daily lives.",
-        "image": "",
+        "image": "/assets/images/img_4534.jpg",
         "imageAlt": "Sons of Allen"
       }
     ]
@@ -598,7 +598,7 @@
       "Bethel is part of a global denomination. The African Methodist Episcopal Church is divided into 19 Episcopal Districts — a worldwide church with congregations in South America, Europe, Africa, Canada, Bermuda, the Caribbean Islands, and the United States.",
       "Founded in 1787 by Rev. Richard Allen — the first leader and a former slave — the A.M.E. Church was born out of the fight for dignity and equal worship. We are proud to be part of such a rich history and heritage, and we welcome others to join us in carrying on this tremendous legacy."
     ],
-    "image": "",
+    "image": "/assets/images/img_0633.jpg",
     "imageAlt": "The global A.M.E. Church",
     "stats": [
       {
