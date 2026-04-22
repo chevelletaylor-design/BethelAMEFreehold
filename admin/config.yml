@@ -90,6 +90,12 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Time", name: "time", widget: "string" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades softly into the cream background behind the hero. Works great with any landscape photo — will be heavily faded."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
               - label: "Hero Photo — Left"
                 name: "photoLeft"
                 widget: "object"
@@ -216,6 +222,12 @@ collections:
             fields:
               - { label: "Verse Text", name: "text", widget: "text" }
               - { label: "Reference", name: "reference", widget: "string" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades softly into the background behind the John 3:16 verse."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
 
           # --- MISSION / BELIEFS ---
           - label: "🎯  Mission & Beliefs"
@@ -374,12 +386,6 @@ collections:
                   - { label: "Small Label (uppercase)", name: "label", widget: "string" }
                   - { label: "Board Name", name: "name", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
-                  - label: "Icon"
-                    name: "icon"
-                    widget: "select"
-                    options: ["dove", "coins", "building", "hands"]
-                    default: "dove"
-                    hint: "Custom icon shown above the board name. dove = spiritual, coins = finance, building = property, hands = community."
 
           # --- HERITAGE ---
           - label: "🌍  A.M.E. Heritage (global denomination)"
@@ -427,12 +433,6 @@ collections:
                 name: "ways"
                 widget: "list"
                 fields:
-                  - label: "Icon"
-                    name: "icon"
-                    widget: "select"
-                    options: ["online", "person", "envelope"]
-                    default: "online"
-                    hint: "Custom icon. online = computer/card, person = check-in, envelope = mail."
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "body", widget: "text" }
 
@@ -495,6 +495,12 @@ collections:
               - { label: "Phone (link-safe)", name: "phoneHref", widget: "string", hint: "Numbers only, e.g. 17324620826" }
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Google Maps Embed URL", name: "mapEmbed", widget: "string", hint: "Paste the 'src' URL from a Google Maps embed" }
+              - label: "Faded Background Photo (optional)"
+                name: "backgroundImage"
+                widget: "image"
+                required: false
+                hint: "A photo that fades softly behind the Plan a Visit section."
+              - { label: "Background Photo Alt Text", name: "backgroundImageAlt", widget: "string", required: false }
 
           # --- FORMS ---
           - label: "✉️  Contact Form"
