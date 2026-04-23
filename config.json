@@ -422,7 +422,7 @@
       "date": "December 2026",
       "location": "Bethel AME Church · 3 Waterworks Road, Freehold, NJ",
       "title": "Annual Holiday Gala",
-      "image": "",
+      "image": "/assets/images/img_0577.jpg",
       "ctaHref": "#contact",
       "description": "Join us for our annual Holiday Gala — an evening of celebration, fellowship, and community. Details to come as we get closer to the date."
     },
@@ -440,7 +440,7 @@
         "title": "2023 Annual Holiday Gala",
         "date": "December 2023",
         "description": "Our annual gala bringing together the Bethel congregation for an evening of joy, gratitude, and togetherness.",
-        "image": "",
+        "image": "/assets/images/img_9825.jpg",
         "imageAlt": "2023 Holiday Gala"
       }
     ]
