@@ -247,7 +247,7 @@
     ],
     "beliefLabel": "WHAT WE BELIEVE",
     "missionHeading": "To move beyond the walls of the church.",
-    "beliefImage": "",
+    "beliefImage": "/assets/images/481895514_671849582076737_2399930819821223814_n.jpg",
     "missionImageAlt": "Bethel serving the community"
   },
   "about": {
@@ -382,7 +382,7 @@
         "tone": "sky"
       },
       {
-        "image": "/assets/images/img_4335.jpg",
+        "image": "/assets/images/img_4485.jpg",
         "alt": "Pastor Sparks with family",
         "tone": "green"
       }
@@ -422,7 +422,7 @@
       "date": "December 2026",
       "location": "Bethel AME Church · 3 Waterworks Road, Freehold, NJ",
       "title": "Annual Holiday Gala",
-      "image": "",
+      "image": "/assets/images/img_0577.jpg",
       "ctaHref": "#contact",
       "description": "Join us for our annual Holiday Gala — an evening of celebration, fellowship, and community. Details to come as we get closer to the date."
     },
@@ -433,17 +433,17 @@
         "title": "2024 Annual Holiday Gala",
         "date": "December 2024",
         "description": "A beautiful evening of fellowship, music, and celebration with the Bethel family and friends from across the community.",
-        "image": "",
+        "image": "/assets/images/img_9825.jpg",
         "imageAlt": "2024 Holiday Gala",
-        "link": ""
+        "link": "https://ctaylormsllc.pixieset.com/bethelgala2024/"
       },
       {
         "title": "2023 Annual Holiday Gala",
         "date": "December 2023",
         "description": "Our annual gala bringing together the Bethel congregation for an evening of joy, gratitude, and togetherness.",
-        "image": "",
+        "image": "/assets/images/img_0262.jpg",
         "imageAlt": "2023 Holiday Gala",
-        "link": ""
+        "link": "https://ctaylormsllc.pixieset.com/bethelamefreeholdgala2023/"
       }
     ]
   },
@@ -917,7 +917,7 @@
       "Bethel is part of a global denomination. The African Methodist Episcopal Church is divided into 19 Episcopal Districts — a worldwide church with congregations in South America, Europe, Africa, Canada, Bermuda, the Caribbean Islands, and the United States.",
       "Founded in 1787 by Rev. Richard Allen — the first leader and a former slave — the A.M.E. Church was born out of the fight for dignity and equal worship. We are proud to be part of such a rich history and heritage, and we welcome others to join us in carrying on this tremendous legacy."
     ],
-    "image": "",
+    "image": "/assets/images/img_4535.jpg",
     "imageAlt": "The global A.M.E. Church",
     "stats": [
       {
